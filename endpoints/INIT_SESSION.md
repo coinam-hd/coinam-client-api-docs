@@ -1,3 +1,5 @@
+[&laquo; Return to main page](../README.md)
+
 # Initiate Session
 
 * If a session cookie is not set, use this endpoint to request a new session;
