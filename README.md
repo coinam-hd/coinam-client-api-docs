@@ -34,3 +34,4 @@ Code | Meaning | Possible Resolution
 `SESSION_CHECKSUM_FAIL` | Session checksum validation has failed | Discard existing session; Start a new one
 `SESSION_CREATE_ERROR` | Failed to start a new API session | n/a
 `SESSION_CREATE_TIMEOUT` | Request new sessions/tokens too fast from same IP address | Possible abuse detected
+`XSRF_ERROR` | XSRF/CSRF error | n/a
