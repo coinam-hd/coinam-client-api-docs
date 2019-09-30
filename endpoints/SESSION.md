@@ -15,7 +15,7 @@ xsrf | hash32 | 16 byte XSRF/CSRF token
 authUser | NULL/object | If a registered user is authenticated a user object is returned otherwise NULL
 reCaptcha | object | ReCaptcha object (see below)
 issuedOn | integer | Timestamp when this session was initiated
-lastUsedOn | integer | Timestamp when this session was last user
+lastUsedOn | integer | Timestamp when this session was last used
 
 #### `object` reCaptcha
 
