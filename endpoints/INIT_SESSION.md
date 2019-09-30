@@ -24,4 +24,4 @@ Code | Description| Possible Resolution
 `SESSION_CREATE_ERROR` | Failed to start a new API session | n/a
 `SESSION_CREATE_TIMEOUT` | Request new sessions/tokens too fast from same IP address | Possible abuse detected
 
-It is also possible to get one of [**Global Error Messages**](../README.md)
+It is also possible to get one of [**Global Error Messages**](../README.md#global-error-messages)
