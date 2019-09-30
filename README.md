@@ -25,6 +25,7 @@ Coinam Client API documentation.
 Header | Description
 --- | ---
 Coinam-Client-Token | Required for all endpoints except [**init_session**](endpoints/INIT_SESSION.md#get-init_session) endpoint
+Coinam-Client-Payload | SHA1 hash of sent payload; Required in most of the endpoints
 Coinam-Client-Timestamp | Timestamp in UTC (GMT+0:00) timezone
 
 * Params can be sent as `application/json` or `application/x-www-form-urlencoded`
@@ -43,7 +44,10 @@ Code | Meaning | Possible Resolution
 --- | --- | ---
 `DB_CONNECTION_ERROR` | App fails to connect with appropriate API logs database | n/a
 `BAD_REMOTE_ADDR` | App fails to determine remote IP address | n/a
-`API_SESSION_NOT_FOUND` | No such API session found with given token (and/or in rare cases IP address) | n/a
-`API_SESSION_RETRIEVE_ERROR` | There was an error while retrieving API session | Discard existing session; Start  a new one
+`SESSION_ID_HEADER` | API session id not sent as HTTP request header | Send API session ID
+`SESSION_ID_HEADER_INVALID` | API session id sent as header is invalid (does not match hash64) | Send a valid API session ID
+`SESSION_NOT_FOUND` | No such API session found with given token (and/or in rare cases IP address) | n/a
+`SESSION_RETRIEVE_ERROR` | There was an error while retrieving API session | Discard existing session; Start  a new one
+`SESSION_IP_ERROR` | Session was not initiated with current IP address | Discard existing session; Start a new one
 `SESSION_CHECKSUM_FAIL` | Session checksum validation has failed | Discard existing session; Start a new one
 `XSRF_ERROR` | XSRF/CSRF error | n/a
