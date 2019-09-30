@@ -4,7 +4,8 @@ Coinam Client API documentation.
 
 ## Basics
 
-**Base URL:** https://api.coinam.com/client/
+**Base URL:** https://api.coinam.com/client/  
+**Charset:** All are from **ASCII** (from dec 32 to 126), unless other charset is mentioned specifically;  
 
 
 ## Endpoints
@@ -15,6 +16,15 @@ Coinam Client API documentation.
 │   ├── `POST` [**/register**](endpoints/REGISTER.md) *(Signup / Registration of new user)*  
 │   └── `POST` [**/login**](endpoints/LOGIN.md) *(Authenticate session as a registered user)*  
 └── 
+
+## XHR Requests
+
+### Headers
+
+Header | Description
+--- | ---
+Coinam-Client-Token | Required for all endpoints except [**init_session**](endpoints/INIT_SESSION.md#get-init_session) endpoint
+Coinam-Client-Timestamp | Timestamp in UTC (GMT+0:00) timezone
 
 ## Global Response Params
 
