@@ -26,6 +26,9 @@ Header | Description
 Coinam-Client-Token | Required for all endpoints except [**init_session**](endpoints/INIT_SESSION.md#get-init_session) endpoint
 Coinam-Client-Timestamp | Timestamp in UTC (GMT+0:00) timezone
 
+* Params can be sent as `application/json` or `application/x-www-form-urlencoded`
+* Response is always sent as `application/json; charset=utf8`
+
 ## Global Response Params
 
 Param | Type | Description
