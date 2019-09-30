@@ -25,6 +25,7 @@ xsrf | hash32 | 16 byte XSRF token, This **MUST NOT** be stored in a cookie;
 
 Code | Description| Possible Resolution
 --- | --- | ---
+`TOKEN_ALREADY_SUPPLIED` | A valid session token was already supplied in header | No need to use this endpoint
 `SESSION_CREATE_ERROR` | Failed to start a new API session | n/a
 `SESSION_CREATE_TIMEOUT` | Request new sessions/tokens too fast from same IP address | Possible abuse detected
 

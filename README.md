@@ -46,6 +46,4 @@ Code | Meaning | Possible Resolution
 `API_SESSION_NOT_FOUND` | No such API session found with given token (and/or in rare cases IP address) | n/a
 `API_SESSION_RETRIEVE_ERROR` | There was an error while retrieving API session | Discard existing session; Start  a new one
 `SESSION_CHECKSUM_FAIL` | Session checksum validation has failed | Discard existing session; Start a new one
-`SESSION_CREATE_ERROR` | Failed to start a new API session | n/a
-`SESSION_CREATE_TIMEOUT` | Request new sessions/tokens too fast from same IP address | Possible abuse detected
 `XSRF_ERROR` | XSRF/CSRF error | n/a

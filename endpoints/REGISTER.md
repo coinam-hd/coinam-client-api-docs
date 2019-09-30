@@ -28,9 +28,9 @@ userId | integer | Newly registered user ID
 
 Code | Description| Possible Resolution
 --- | --- | ---
-`FIRST_NAME_LEN` | Length issue with First name | Valid values must be between 3-16 bytes (**utf8mb4** charset)
+`FIRST_NAME_LEN` | Length issue with First name | Valid values must be between 3-16 chars (**utf8mb4** charset)
 `FIRST_NAME_INVALID` | First name param contains an illegal character or is invalid | n/a
-`LAST_NAME_LEN` | Length issue with Last name | Valid values must be between 3-16 bytes (**utf8mb4** charset)
+`LAST_NAME_LEN` | Length issue with Last name | Valid values must be between 3-16 chars (**utf8mb4** charset)
 `LAST_NAME_INVALID` | Last name param contains an illegal character or is invalid | n/a
 `EMAIL_ADDR_INVALID` | Invalid e-mail address | n/a
 `COUNTRY_INVALID` | Country code is invalid or not one of the listed countries | n/a
