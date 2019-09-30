@@ -6,6 +6,8 @@
 
 ## Request
 
+`GET` [/init_session]()
+
 Param | Type | Required | Description
 --- | --- | --- | ---
 type | string | no | Determined from user-agent for time being; This will change later!
