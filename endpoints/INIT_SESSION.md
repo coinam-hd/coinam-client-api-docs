@@ -2,7 +2,7 @@
 
 * If a session cookie is not set, use this endpoint to request a new session;
 * If session cookie is already set, ignore calling this endpoint;
-* Sessions are IP address sensitive
+* Sessions are IP address sensitive;
 
 ## `GET` [/init_session]()
 
