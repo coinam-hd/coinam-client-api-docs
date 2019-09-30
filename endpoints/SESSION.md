@@ -21,7 +21,7 @@ lastUsedOn | integer | Timestamp when this session was last user
 
 Param | Type |  Description
 --- | --- | --- 
-required | boolean | if `true` then reCaptcha should be displayed at necessary forms, i.e. login/register;
+required | boolean | if `true` then reCaptcha should be displayed at necessary forms, i.e. login/register; Otherwise there is no need to display reCaptcha
 lastVerified | NULL/integer | Timestamp of last reCaptcha validation
 publicKey | NULL/string | ReCaptcha public key or NULL (if none configured)
 
