@@ -10,10 +10,10 @@ Coinam Client API documentation.
 ## Endpoints
 
 ├── Endpoints  
-│   ├── `GET` [**/init_session**](endpoints/INIT_SESSION.md#get-init_session) *Initiate a new session*  
-│   ├── `GET` [**/session**](endpoints/SESSION.md) *Get information about current sessions*  
-│   ├── `POST` [**/register**](endpoints/REGISTER.md) *Signup / Registration of new user*  
-│   └── `POST` [**/login**](endpoints/LOGIN.md) *Authenticate session as a registered user*  
+│   ├── `GET` [**/init_session**](endpoints/INIT_SESSION.md#get-init_session) *(Initiate a new session)*  
+│   ├── `GET` [**/session**](endpoints/SESSION.md) *(Get information about current sessions)*  
+│   ├── `POST` [**/register**](endpoints/REGISTER.md) *(Signup / Registration of new user)*  
+│   └── `POST` [**/login**](endpoints/LOGIN.md) *(Authenticate session as a registered user)*  
 └── 
 
 ## Global Response Params
