@@ -10,13 +10,22 @@
 
 Param | Type |  Description
 --- | --- | --- 
-countries | object | List of countries as JSON object
+countries | array | Indexed array of countries as each as JSON object
+
+#### `object` country
+
+Param | Type | Description
+--- | --- | ---
+name | string | Full country name
+status | integer | Can be int 1 or 0; Currently only countries with status 1 are returned
+code | string | ISO 3166-1 (Alpha-3)
+codeShort | string | Alpha-2
+dialCode | int | International dialing code/prefix
 
 ### Errors
 
 Code | Description| Possible Resolution
 --- | --- | ---
-`SESSION_CREATE_ERROR` | Failed to start a new API session | n/a
-`SESSION_CREATE_TIMEOUT` | Request new sessions/tokens too fast from same IP address | Possible abuse detected
+`COUNTRIES_RETRIEVE_FAIL` | Failed to get list of countries | n/a
 
 It is also possible to get one of [**Global Error Messages**](../README.md#global-error-messages).
