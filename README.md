@@ -5,7 +5,7 @@ Coinam Client API documentation.
 ## Basics
 
 **Base URL:** https://api.coinam.com/client/  
-**Charset:** All are from **ASCII** (from dec 32 to 126), unless other charset is mentioned specifically;  
+**Charset:** All are from **ASCII** (from index 32 to 126), unless other charset is mentioned specifically;  
 
 
 ## Endpoints
@@ -25,7 +25,6 @@ Coinam Client API documentation.
 Header | Description
 --- | ---
 Coinam-Client-Token | Required for all endpoints except [**init_session**](endpoints/INIT_SESSION.md#get-init_session) endpoint
-Coinam-Client-Payload | SHA1 hash of sent payload; Required in most of the endpoints
 Coinam-Client-Timestamp | Timestamp in UTC (GMT+0:00) timezone
 
 * Params can be sent as `application/json` or `application/x-www-form-urlencoded`
