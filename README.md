@@ -41,6 +41,7 @@ Param | Type | Description
 
 Code | Meaning | Possible Resolution
 --- | --- | ---
+`PLATFORM_CONFIG_ERROR` | Failed to retrieves platform configuration | n/a
 `DB_CONNECTION_ERROR` | App fails to connect with appropriate API logs database | n/a
 `BAD_REMOTE_ADDR` | App fails to determine remote IP address | n/a
 `SESSION_ID_HEADER` | API session id not sent as HTTP request header | Send API session ID
