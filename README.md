@@ -21,7 +21,7 @@ Coinam Client API documentation.
 Param | Type | Description
 --- | --- | ---
 `status` | boolean | Determines if request was successful; On `false` response object MAY include `error` param
-`error` | string | An error message/code, included in response if there is an error; Can sometimes be an empty string or NULL
+`error` | string | An error message/code, included in response if there is an error; Can sometimes be an empty string or NULL;
 
 ## Global Error Messages
 
