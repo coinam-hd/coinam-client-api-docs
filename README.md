@@ -51,6 +51,5 @@ Code | Meaning | Possible Resolution
 `SESSION_NOT_FOUND` | No such API session found with given token (and/or in rare cases IP address) | n/a
 `SESSION_RETRIEVE_ERROR` | There was an error while retrieving API session | Discard existing session; Start  a new one
 `SESSION_IP_ERROR` | Session was not initiated with current IP address | Discard existing session; Start a new one; **Notify user that their IP address has changed**
-`SESSION_IP_PURGED` | This session is not the latest session from current IP address | Discard existing session; Start a new one; Notify user there are multiple sessions from same IP
 `SESSION_CHECKSUM_FAIL` | Session checksum validation has failed | Discard existing session; Start a new one
 `XSRF_ERROR` | XSRF/CSRF error | n/a
