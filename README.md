@@ -41,8 +41,11 @@ Param | Type | Description
 
 Code | Meaning | Possible Resolution
 --- | --- | ---
+`API_DISABLED` | Client API is globally disabled | n/a
+`API_CONTROLLER_DISABLED` | Requested endpoint/controller is currently disabled | n/a
 `INTERNAL_ERROR` | An internal error has occurred | n/a
 `PLATFORM_CONFIG_ERROR` | Failed to retrieves platform configuration | n/a
+`PLATFORM_ACCESS_ERROR` | Failed to retrieves platform accessibility config | n/a
 `DB_CONNECTION_ERROR` | App fails to connect with appropriate API logs database | n/a
 `DB_QUERY_ERROR` | DB query critical to execution was failed | n/a
 `BAD_REMOTE_ADDR` | App fails to determine remote IP address | n/a
