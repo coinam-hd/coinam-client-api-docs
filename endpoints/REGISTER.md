@@ -15,6 +15,8 @@ firstName | string | yes | User first name
 lastName | string | yes | User last name
 email | string | yes | Valid e-mail address
 country | string | yes | ISO 3166-1 (Alpha-3) country code; See [Countries](COUNTRIES.md) endpoint;
+password | string | yes | Expects alphanumeric string with special characters
+confirmPassword | string | yes | Expects user to retype same password
 terms | string/integer | yes | "1" to acknowledge acceptance of terms and other policies
 
 ### Success Response
@@ -39,6 +41,10 @@ Code | Description| Possible Resolution
 `EMAIL_ADDR_REQ` | E-mail address is required | n/a
 `EMAIL_ADDR_INVALID` | Invalid e-mail address | n/a
 `EMAIL_ADDR_DUP` | This e-mail address is already registered | Suggest user to login or recover password
+`PASSWORD_REQ` | Password field is required | n/a
+`PASSWORD_WEAK` | Entered password is weak | n/a
+`PASSWORD_INVALID` | Entered password contains an illegal character | n/a
+`PASSWORD_MATCH` | Retyped password does not match | n/a
 `COUNTRY_INVALID` | Country code is invalid or not one of the listed countries | n/a
 `TERMS_UNCHECKED` | User has not acknowledged to TOS | n/a
 
