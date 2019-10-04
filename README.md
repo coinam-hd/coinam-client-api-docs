@@ -36,6 +36,7 @@ Param | Type | Description
 --- | --- | ---
 `status` | boolean | Determines if request was successful; On `false` response object MAY include `error` param
 `error` | string | An error message/code, included in response if there is an error; Can sometimes be an empty string or NULL; In such cases it can be reported as "Failed without an error code"
+`param` | string/NULL | Indicates which form field/param caused an error, if present, focus should be given to that field/param for better UX
 
 ## Global Error Messages
 
