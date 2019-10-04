@@ -15,6 +15,7 @@ firstName | string | yes | User first name,  **UTF8MB4 supported**
 lastName | string | yes | User last name,  **UTF8MB4 supported**
 email | string | yes | Valid e-mail address
 country | string | yes | ISO 3166-1 (Alpha-3) country code; See [Countries](COUNTRIES.md) endpoint;
+terms | string/integer | yes | "1" to acknowledge acceptance of terms and other policies
 
 ### Success Response
 
@@ -29,12 +30,16 @@ userId | integer | Newly registered user ID
 Code | Description| Possible Resolution
 --- | --- | ---
 `ALREADY_LOGGED_IN` | This session is already authenticated with registered user | Redirect away from registration page to dashboard
+`FIRST_NAME_REQ` | First name is required | n/a
 `FIRST_NAME_LEN` | Length issue with First name | Valid values must be between 3-16 chars (**utf8mb4** charset)
 `FIRST_NAME_INVALID` | First name param contains an illegal character or is invalid | n/a
+`LAST_NAME_REQ` | Last name is required | n/a
 `LAST_NAME_LEN` | Length issue with Last name | Valid values must be between 3-16 chars (**utf8mb4** charset)
 `LAST_NAME_INVALID` | Last name param contains an illegal character or is invalid | n/a
+`EMAIL_ADDR_REQ` | E-mail address is required | n/a
 `EMAIL_ADDR_INVALID` | Invalid e-mail address | n/a
 `EMAIL_ADDR_DUP` | This e-mail address is already registered | Suggest user to login or recover password
 `COUNTRY_INVALID` | Country code is invalid or not one of the listed countries | n/a
+`TERMS_UNCHECKED` | User has not acknowledged to TOS | n/a
 
 It is also possible to get one of [**Global Error Messages**](../README.md#global-error-messages).
