@@ -42,7 +42,7 @@ Code | Description| Possible Resolution
 `EMAIL_ADDR_INVALID` | Invalid e-mail address | n/a
 `EMAIL_ADDR_DUP` | This e-mail address is already registered | Suggest user to login or recover password
 `PASSWORD_REQ` | Password field is required | n/a
-`PASSWORD_WEAK` | Entered password is weak | n/a
+`PASSWORD_WEAK` | Entered password is weak | Suggest user to use strong password, length should be between 8-32 characters, alphanumeric with special characters
 `PASSWORD_INVALID` | Entered password contains an illegal character | n/a
 `PASSWORD_MATCH` | Retyped password does not match | n/a
 `COUNTRY_INVALID` | Country code is invalid or not one of the listed countries | n/a
