@@ -11,8 +11,8 @@
 Param | Type | Required | Description
 --- | --- | --- | ---
 xsrf | hash32 | yes | XSRF token
-firstName | string | yes | User first name,  **UTF8MB4 supported**
-lastName | string | yes | User last name,  **UTF8MB4 supported**
+firstName | string | yes | User first name
+lastName | string | yes | User last name
 email | string | yes | Valid e-mail address
 country | string | yes | ISO 3166-1 (Alpha-3) country code; See [Countries](COUNTRIES.md) endpoint;
 terms | string/integer | yes | "1" to acknowledge acceptance of terms and other policies
@@ -31,10 +31,10 @@ Code | Description| Possible Resolution
 --- | --- | ---
 `ALREADY_LOGGED_IN` | This session is already authenticated with registered user | Redirect away from registration page to dashboard
 `FIRST_NAME_REQ` | First name is required | n/a
-`FIRST_NAME_LEN` | Length issue with First name | Valid values must be between 3-16 chars (**utf8mb4** charset)
+`FIRST_NAME_LEN` | Length issue with First name | Valid values must be between 3-16 chars
 `FIRST_NAME_INVALID` | First name param contains an illegal character or is invalid | n/a
 `LAST_NAME_REQ` | Last name is required | n/a
-`LAST_NAME_LEN` | Length issue with Last name | Valid values must be between 3-16 chars (**utf8mb4** charset)
+`LAST_NAME_LEN` | Length issue with Last name | Valid values must be between 3-16 chars 
 `LAST_NAME_INVALID` | Last name param contains an illegal character or is invalid | n/a
 `EMAIL_ADDR_REQ` | E-mail address is required | n/a
 `EMAIL_ADDR_INVALID` | Invalid e-mail address | n/a
