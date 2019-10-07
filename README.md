@@ -57,3 +57,12 @@ Code | Meaning | Possible Resolution
 `SESSION_IP_ERROR` | Session was not initiated with current IP address | Discard existing session; Start a new one; **Notify user that their IP address has changed**
 `SESSION_CHECKSUM_FAIL` | Session checksum validation has failed | Discard existing session; Start a new one
 `XSRF_ERROR` | XSRF/CSRF error | n/a
+
+### Authentication Errors
+
+Code | Meaning | Possible Resolution
+--- | --- | ---
+`AUTH_NOT_LOGGED_IN` | User is not logged in; Attempting to access authenticated only controller | Redirect users to login screen
+`AUTH_USER_RETRIEVE_ERROR` | There was an internal error while retrieving user account | n/a
+`AUTH_TOKEN_MISMATCH` | User has logged in again using different device/browser | Redirect user to login screen; **Tell them they have their session has been overridden**
+`AUTH_USER_DISABLED` | User account has been DISABLED | n/a
