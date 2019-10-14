@@ -18,7 +18,7 @@ password | string | yes | Password
 
 Param | Type |  Description
 --- | --- | --- 
-userId | integer | Newly registered user ID
+userId | integer | Authenticated user ID
 
 * Session token will now be authenticated with this user;
 
