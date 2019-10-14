@@ -71,3 +71,11 @@ Code | Meaning | Possible Resolution
 `AUTH_USER_RETRIEVE_ERROR` | There was an internal error while retrieving user account | n/a
 `AUTH_TOKEN_MISMATCH` | User has logged in again using different device/browser | Redirect user to login screen; **Tell them they have their session has been overridden**
 `AUTH_USER_DISABLED` | User account has been DISABLED | n/a
+
+### 2FA Error Messages
+
+Code | Meaning | Possible Resolution
+--- | --- | ---
+2FA_TOTP_REQ | 2FA TOTP code is required | Enter 2FA code from Google Authenticator app
+2FA_TOTP_INVALID | 2FA TOTP code is invalid; Does not match pattern | Invalid 2FA TOTP code
+2FA_TOTP_INCORRECT | 2FA TOTP code is incorrect | You have entered incorrect 2FA code
