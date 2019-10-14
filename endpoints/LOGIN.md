@@ -18,7 +18,7 @@ password | string | yes | Password
 
 Param | Type |  Description
 --- | --- | --- 
-
+userId | integer | Newly registered user ID
 
 * Session token will now be authenticated with this user;
 
@@ -27,6 +27,7 @@ Param | Type |  Description
 Code | Description| Possible Resolution
 --- | --- | ---
 `EMAIL_ADDR_REQ` | E-mail address is required | n/a
+`EMAIL_ADDR_INVALID` | Invalid e-mail address | n/a
 `EMAIL_ADDR_UNREG` | E-mail address is not registered | n/a
 `PASSWORD_REQ` | Password is required | n/a
 `PASSWORD_INCORRECT` | Incorrect password | n/a
