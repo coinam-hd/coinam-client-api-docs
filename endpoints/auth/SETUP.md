@@ -32,7 +32,7 @@ country | string | ISO 3166-1 (Alpha-3) user selected country code
 Code | Description| Possible Resolution
 --- | --- | ---
 
-Check common errors for this endpoint [**Endpoint common errors codes on all HTTP methods**](#errors-common-on-all-http-methods)
+Check common errors for this endpoint [**Endpoint common errors codes on all HTTP methods**](#errors-common-on-all-http-methods).  
 It is also possible to get one of [**Global Error Messages**](../../README.md#global-error-messages).
 
 ---
@@ -63,7 +63,7 @@ SUGGESTED_SEED_BAD | Suggested seed does not match | User may have refreshed the
 
 Check [**2FA Error Messages**](../../README.md#2fa-error-messages).
 
-Check common errors for this endpoint [**Endpoint common errors codes on all HTTP methods**](#errors-common-on-all-http-methods)
+Check common errors for this endpoint [**Endpoint common errors codes on all HTTP methods**](#errors-common-on-all-http-methods).  
 It is also possible to get one of [**Global Error Messages**](../../README.md#global-error-messages).
 
 ---
