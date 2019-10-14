@@ -17,8 +17,8 @@ Coinam Client API documentation.
 │   ├── `POST` [**/register**](endpoints/REGISTER.md) *(Signup / Registration of new user)*  
 │   └── `POST` [**/login**](endpoints/LOGIN.md) *(Authenticate session as a registered user)*  
 │   
-│   Authenticated Endpoints
-│   ├── `GET` [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
+│   Authenticated Endpoints  
+│   ├── `GET` | `POST` [**/auth/setup**](endpoints/auth/SETUP.md) *(Account Setup)*  
 │   └── `GET` | `POST` | `DELETE` [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
 │   
 └──  
