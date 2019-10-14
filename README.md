@@ -18,6 +18,7 @@ Coinam Client API documentation.
 │   └── `POST` [**/login**](endpoints/LOGIN.md) *(Authenticate session as a registered user)*  
 │   
 ├── **Authenticated Session** Endpoints  
+│   ├── `GET` | `POST` [**/auth/recovery**](endpoints/auth/RECOVERY.md) *(Account Recovery Setup)*  
 │   ├── `GET` | `POST` [**/auth/setup**](endpoints/auth/SETUP.md) *(Account Setup)*  
 │   └── `GET` | `POST` | `DELETE` [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
 │   
@@ -76,6 +77,6 @@ Code | Meaning | Possible Resolution
 
 Code | Meaning | Possible Resolution
 --- | --- | ---
-2FA_TOTP_REQ | 2FA TOTP code is required | Enter 2FA code from Google Authenticator app
-2FA_TOTP_INVALID | 2FA TOTP code is invalid; Does not match pattern | Invalid 2FA TOTP code
-2FA_TOTP_INCORRECT | 2FA TOTP code is incorrect | You have entered incorrect 2FA code
+`2FA_TOTP_REQ` | 2FA TOTP code is required | Enter 2FA code from Google Authenticator app
+`2FA_TOTP_INVALID` | 2FA TOTP code is invalid; Does not match pattern | Invalid 2FA TOTP code
+`2FA_TOTP_INCORRECT` | 2FA TOTP code is incorrect | You have entered incorrect 2FA code
