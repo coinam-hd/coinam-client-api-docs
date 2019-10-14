@@ -16,8 +16,8 @@ Coinam Client API documentation.
 │   ├── `GET` [**/countries**](endpoints/COUNTRIES.md) *(Get list of countries)*  
 │   ├── `POST` [**/register**](endpoints/REGISTER.md) *(Signup / Registration of new user)*  
 │   └── `POST` [**/login**](endpoints/LOGIN.md) *(Authenticate session as a registered user)*  
-│   │   ├── `GET` [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
-│   │   └── `GET` | `POST` | `DELETE` [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
+│              ├── `GET` [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
+│              └── `GET` | `POST` | `DELETE` [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
 └──  
 
 ## XHR Requests
