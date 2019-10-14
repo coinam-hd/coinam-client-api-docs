@@ -17,7 +17,7 @@ xsrf | hash32 | yes | XSRF token
 Param | Type |  Description
 --- | --- | --- 
 
-* Session is not un-authenticated;
+* Session is now un-authenticated;
 
 ### Errors
 
