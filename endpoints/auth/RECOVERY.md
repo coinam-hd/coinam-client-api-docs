@@ -17,7 +17,7 @@ xsrf | hash32 | yes | XSRF token
 Param | Type |  Description
 --- | --- | --- 
 country | string | Currently select country code for recovery phone
-phone | string | Phone number without country code prefix
+phone | string/NULL | Phone number without country code prefix
 
 ### Errors
 
