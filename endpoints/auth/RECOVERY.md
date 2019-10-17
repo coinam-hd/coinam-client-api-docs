@@ -16,8 +16,7 @@ xsrf | hash32 | yes | XSRF token
 
 Param | Type |  Description
 --- | --- | --- 
-country | string | Currently select country code for recovery phone
-phone | string/NULL | Phone number without country code prefix
+phone | string/NULL | Phone number in format +1.234567 (where +1 is dialCode and 234567 is the actual phone number)
 
 ### Errors
 
