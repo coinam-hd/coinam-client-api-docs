@@ -45,7 +45,7 @@ Param | Type | Required | Description
 --- | --- | --- | ---
 xsrf | hash32 | yes | XSRF token
 suggestedSeed | string | yes | TOTP that was suggested by previous `GET` request to same endpoint
-totpCode | string/integer | yes | 6 digit TOTP code
+totpCode | string/integer | yes | 6 digit TOTP code; User is suppose to enter code after scanning/enter suggested seed
 
 ### Success Response
 
