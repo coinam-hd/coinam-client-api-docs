@@ -51,8 +51,6 @@ totpCode | string/integer | yes | 6 digit TOTP code
 
 Param | Type |  Description
 --- | --- | --- 
-suggestedSeed | string | Google 2FA authenticator seed
-country | string | ISO 3166-1 (Alpha-3) user selected country code
 
 ### Errors
 

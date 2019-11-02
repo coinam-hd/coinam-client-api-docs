@@ -61,6 +61,7 @@ Code | Meaning | Possible Resolution
 `SESSION_RETRIEVE_ERROR` | There was an error while retrieving API session | Discard existing session; Start  a new one
 `SESSION_IP_ERROR` | Session was not initiated with current IP address | Discard existing session; Start a new one; **Notify user that their IP address has changed**
 `SESSION_CHECKSUM_FAIL` | Session checksum validation has failed | Discard existing session; Start a new one
+`SESSION_IS_ARCHIVED` | Session has been archived; A user with same authenticated ID has created/logged on to a newer token/session | Discard existing session; Start a new one
 `XSRF_ERROR` | XSRF/CSRF error | n/a
 
 ### Authentication Errors
