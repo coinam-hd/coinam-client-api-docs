@@ -32,8 +32,8 @@ country | string | ISO 3166-1 (Alpha-3) user selected country code
 Code | Description| Possible Resolution
 --- | --- | ---
 
-Check common errors for this endpoint [**Endpoint common errors codes on all HTTP methods**](#errors-common-on-all-http-methods).  
-It is also possible to get one of [**Global Error Messages**](../../README.md#global-error-messages).
+* Check common errors for this endpoint [**Endpoint common errors codes on all HTTP methods**](#errors-common-on-all-http-methods).  
+* It is also possible to get one of [**Global Error Messages**](../../README.md#global-error-messages).
 
 ---
 
@@ -59,9 +59,8 @@ Code | Description| Possible Resolution
 SUGGESTED_SEED_REQ | Suggested seed is required | send same suggested seed as scanned/requested as hidden form param
 SUGGESTED_SEED_BAD | Suggested seed does not match | User may have refreshed the window, Suggested seed sent with form does not match with latest suggested one
 
-Check [**2FA Error Messages**](../../README.md#2fa-error-messages).
-
-Check common errors for this endpoint [**Endpoint common errors codes on all HTTP methods**](#errors-common-on-all-http-methods).  
-It is also possible to get one of [**Global Error Messages**](../../README.md#global-error-messages).
+* Check [**2FA Error Messages**](../../README.md#2fa-error-messages).  
+* Check common errors for this endpoint [**Endpoint common errors codes on all HTTP methods**](#errors-common-on-all-http-methods).  
+* It is also possible to get one of [**Global Error Messages**](../../README.md#global-error-messages).
 
 ---
