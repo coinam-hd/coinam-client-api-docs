@@ -11,15 +11,15 @@ Coinam Client API documentation.
 ## Endpoints
 
 ├── Endpoints  
-│   ├── [`/session`](endpoints/SESSION.md) *(Initiate a new session OR retrieve information of existing)*  
-│   ├── [**`/countries`**](endpoints/COUNTRIES.md) *(Get list of countries)*  
-│   ├── [**`/register`**](endpoints/REGISTER.md) *(Signup / Registration of new user)*  
-│   └── [**`/login`**](endpoints/LOGIN.md) *(Authenticate session as a registered user)*  
+│   ├── [**/session**](endpoints/SESSION.md) *(Initiate a new session OR retrieve information of existing)*  
+│   ├── [**/countries**](endpoints/COUNTRIES.md) *(Get list of countries)*  
+│   ├── [**/register**](endpoints/REGISTER.md) *(Signup / Registration of new user)*  
+│   └── [**/login**](endpoints/LOGIN.md) *(Authenticate session as a registered user)*  
 │   
 ├── **Authenticated Session** Endpoints  
-│   ├── `GET` | `POST` [**/auth/recovery**](endpoints/auth/RECOVERY.md) *(Account Recovery Setup)*  
-│   ├── `GET` | `POST` [**/auth/setup**](endpoints/auth/SETUP.md) *(Account Setup)*  
-│   └── `GET` | `POST` | `DELETE` [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
+│   ├── [**/auth/recovery**](endpoints/auth/RECOVERY.md) *(Account Recovery Setup)*  
+│   ├── [**/auth/setup**](endpoints/auth/SETUP.md) *(Account Setup)*  
+│   └── [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
 │   
 └──  
 
