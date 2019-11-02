@@ -72,6 +72,7 @@ Code | Meaning | Possible Resolution
 `AUTH_USER_RETRIEVE_ERROR` | There was an internal error while retrieving user account | n/a
 `AUTH_TOKEN_MISMATCH` | User has logged in again using different device/browser | Redirect user to login screen; **Tell them they have their session has been overridden**
 `AUTH_USER_DISABLED` | User account has been DISABLED | n/a
+`AUTH_USER_2FA_NOT_SETUP` | 2FA has not been setup for this account | Always force users to [**/auth/setup**](endpoints/auth/SETUP.md) right after Registration
 
 ### 2FA Error Messages
 

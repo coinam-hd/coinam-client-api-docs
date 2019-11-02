@@ -44,7 +44,7 @@ Code | Description| Possible Resolution
 Param | Type | Required | Description
 --- | --- | --- | ---
 xsrf | hash32 | yes | XSRF token
-suggestedSeed | string | yes | Suggested seed
+suggestedSeed | string | yes | TOTP that was suggested by previous `GET` request to same endpoint
 totpCode | string/integer | yes | 6 digit TOTP code
 
 ### Success Response
