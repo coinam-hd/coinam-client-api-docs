@@ -11,11 +11,10 @@ Coinam Client API documentation.
 ## Endpoints
 
 ├── Endpoints  
-│   ├── [**`/init_session`**](endpoints/INIT_SESSION.md#get-init_session) *(Initiate a new session)*  
-│   ├── [**`/session`**](endpoints/SESSION.md) *(Get information about current session)*  
-│   ├── `GET` [**/countries**](endpoints/COUNTRIES.md) *(Get list of countries)*  
-│   ├── `POST` [**/register**](endpoints/REGISTER.md) *(Signup / Registration of new user)*  
-│   └── `POST` [**/login**](endpoints/LOGIN.md) *(Authenticate session as a registered user)*  
+│   ├── [**`/session`**](endpoints/SESSION.md) *(Initiate a new session OR retrieve information of existing)*  
+│   ├── [**`/countries`**](endpoints/COUNTRIES.md) *(Get list of countries)*  
+│   ├── [**`/register`**](endpoints/REGISTER.md) *(Signup / Registration of new user)*  
+│   └── [**`/login`**](endpoints/LOGIN.md) *(Authenticate session as a registered user)*  
 │   
 ├── **Authenticated Session** Endpoints  
 │   ├── `GET` | `POST` [**/auth/recovery**](endpoints/auth/RECOVERY.md) *(Account Recovery Setup)*  
