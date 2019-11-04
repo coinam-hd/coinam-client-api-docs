@@ -27,7 +27,7 @@ It is also possible to get one of [**Global Error Messages**](../../README.md#gl
 
 ---
 
-## `POST`  [/auth/recovery?send_sms]()
+## `POST`  [/auth/recovery?request_code]()
 
 ### Request Params
 
@@ -50,20 +50,21 @@ Code | Description| Possible Resolution
 `PHONE_REQ` | Phone number is required | n/a
 `PHONE_INVALID` | Phone number is in invalid format | n/a
 `PHONE_SAME` | Phone number is same as currently set one | n/a
+`SMS_RESEND_WAIT` | Last SMS code was sent less then 5 minutes ago | Response now contains an object prop "sms"; Look for "retryIn" key in this object which indicates number of seconds before a retry is possible
 `SMS_SEND_FAIL` | Failed to send SMS code | n/a
 
 It is also possible to get one of [**Global Error Messages**](../../README.md#global-error-messages).
 
 ---
 
-## `POST`  [/auth/recovery?verify]()
+## `POST`  [/auth/recovery?verify_code]()
 
 ### Request Params
 
 Param | Type | Required | Description
 --- | --- | --- | ---
 xsrf | hash32 | yes | XSRF token
-code | string | yes | 8 digit SMS verification code (alphanumeric)
+smsCode | string | yes | 8 digit SMS verification code (alphanumeric)
 
 ### Success Response
 
@@ -76,6 +77,7 @@ Code | Description| Possible Resolution
 --- | --- | ---
 `SMS_CODE_REQ` | SMS verification code is required | n/a
 `SMS_CODE_BAD` | SMS verification code is invalid or incorrect | n/a
+`SMS_CODE_EXP` | SMS verification code has expired; Each code is valid for a small period of 15 minutes only | n/a
 
 It is also possible to get one of [**Global Error Messages**](../../README.md#global-error-messages).
 
