@@ -50,7 +50,7 @@ It is also possible to get one of [**Global Error Messages**](../../README.md#gl
 
 ---
 
-## `POST`  [/auth/recovery?verify_email]()
+## `POST`  [/auth/profile?verify_email]()
 
 ### Request Params
 
