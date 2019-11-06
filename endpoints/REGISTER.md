@@ -18,6 +18,7 @@ country | string | yes | ISO 3166-1 (Alpha-3) country code; See [Countries](COUN
 password | string | yes | Expects alphanumeric string with special characters
 confirmPassword | string | yes | Expects user to retype same password
 terms | string/integer | yes | "1" to acknowledge acceptance of terms and other policies
+reCaptchaRes | string | no | If `GET /session` indicates that reCaptcha is required (`reCaptcha.required` is `TRUE`) then send reCaptcha response in this param
 
 ### Success Response
 

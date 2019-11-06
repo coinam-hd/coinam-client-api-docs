@@ -4,6 +4,12 @@
 
 * Authenticate as a registered user
 
+### Recommended Flow:
+
+* Show login form with e-mail address and password fields.
+* Make sure TOTP field is hidden.
+* Upon login submission, if error code `2FA_TOTP_REQ` or (wildcard `2FA_*`) is present, then show the 2FA code screen.
+
 ## `POST` [/login]()
 
 ### Request Params
@@ -13,6 +19,8 @@ Param | Type | Required | Description
 xsrf | hash32 | yes | XSRF token
 email | string | yes | Registered e-mail address
 password | string | yes | Password
+totpCode | string | no | TOTP is required if user has google authenticate seed set, otherwise this param is ignored
+reCaptchaRes | string | no | If `GET /session` indicates that reCaptcha is required (`reCaptcha.required` is `TRUE`) then send reCaptcha response in this param
 
 ### Success Response
 
@@ -33,4 +41,5 @@ Code | Description| Possible Resolution
 `PASSWORD_INCORRECT` | Incorrect password | n/a
 `USER_STATUS_DISABLED` | User account is DISABLED | n/a 
 
-It is also possible to get one of [**Global Error Messages**](../README.md#global-error-messages).
+* Check [**2FA Error Messages**](../README.md#2fa-error-messages).  
+** It is also possible to get one of [**Global Error Messages**](../README.md#global-error-messages).

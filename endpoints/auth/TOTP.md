@@ -1,18 +1,35 @@
 [&laquo; Return to main page](../../README.md)
 
-# Account Setup
+# 2FA/TOTP setup
 
 * Finalisation of registration / reset account
+---
 
-### Errors common on all HTTP methods
+## `POST`  [/auth/totp?save_2fa]()
+
+### Request Params
+
+Param | Type | Required | Description
+--- | --- | --- | ---
+xsrf | hash32 | yes | XSRF token
+totpCode | string/integer | yes | 6 digit TOTP code; User is suppose to enter code after scanning/enter suggested seed
+
+### Success Response
+
+Param | Type |  Description
+--- | --- | --- 
+
+### Errors
 
 Code | Description| Possible Resolution
 --- | --- | ---
-SETUP_REDUNDANT | Account setup is redundant; Not necessary; Google 2FA seed is already set | Redirect away to dashboard
+
+* Check [**2FA Error Messages**](../../README.md#2fa-error-messages).  
+* It is also possible to get one of [**Global Error Messages**](../../README.md#global-error-messages).
 
 ---
 
-## `GET`  [/auth/setup]()
+## `GET`  [/auth/totp]()
 
 ### Request Params
 
@@ -32,12 +49,11 @@ country | string | ISO 3166-1 (Alpha-3) user selected country code
 Code | Description| Possible Resolution
 --- | --- | ---
 
-* Check common errors for this endpoint [**Endpoint common errors codes on all HTTP methods**](#errors-common-on-all-http-methods).  
 * It is also possible to get one of [**Global Error Messages**](../../README.md#global-error-messages).
 
 ---
 
-## `POST`  [/auth/setup?save_2fa]()
+## `POST`  [/auth/totp?save_2fa]()
 
 ### Request Params
 
@@ -60,7 +76,6 @@ SUGGESTED_SEED_REQ | Suggested seed is required | send same suggested seed as sc
 SUGGESTED_SEED_BAD | Suggested seed does not match | User may have refreshed the window, Suggested seed sent with form does not match with latest suggested one
 
 * Check [**2FA Error Messages**](../../README.md#2fa-error-messages).  
-* Check common errors for this endpoint [**Endpoint common errors codes on all HTTP methods**](#errors-common-on-all-http-methods).  
 * It is also possible to get one of [**Global Error Messages**](../../README.md#global-error-messages).
 
 ---
