@@ -42,4 +42,4 @@ Code | Description| Possible Resolution
 `USER_STATUS_DISABLED` | User account is DISABLED | n/a 
 
 * Check [**2FA Error Messages**](../README.md#2fa-error-messages).  
-** It is also possible to get one of [**Global Error Messages**](../README.md#global-error-messages).
+* It is also possible to get one of [**Global Error Messages**](../README.md#global-error-messages).
