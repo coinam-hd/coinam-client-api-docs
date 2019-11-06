@@ -5,7 +5,7 @@
 * Finalisation of registration / reset account
 ---
 
-## `POST`  [/auth/totp?save_2fa]()
+## `POST`  [/auth/totp?verify]()
 
 ### Request Params
 

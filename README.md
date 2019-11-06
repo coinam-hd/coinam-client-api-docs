@@ -84,3 +84,4 @@ Code | Meaning | Possible Resolution
 `2FA_TOTP_REQ` | 2FA TOTP code is required | Enter 2FA code from Google Authenticator app
 `2FA_TOTP_INVALID` | 2FA TOTP code is invalid; Does not match pattern | Invalid 2FA TOTP code
 `2FA_TOTP_INCORRECT` | 2FA TOTP code is incorrect | You have entered incorrect 2FA code
+`2FA_TOTP_USED` | 2FA TOTP code has already been used | Same code may not be used more then once
