@@ -18,7 +18,10 @@ Coinam Client API documentation.
 │   
 ├── **Authenticated Session** Endpoints  
 │   ├── [**/auth/recovery**](endpoints/auth/RECOVERY.md) *(Account Recovery Setup)*  
-│   ├── [**/auth/setup**](endpoints/auth/SETUP.md) *(Account Setup)*  
+│   ├── [**/auth/totp**](endpoints/auth/TOTP.md) *(Account 2FA/TOTP Setup)*  
+│   ├── [**/auth/profile**](endpoints/auth/PROFILE.md) *(Account profile & E-mail verifications)*  
+│   ├── [**/auth/dashboard**](endpoints/auth/DASHBOARD.md) *(Dashboard)*  
+│   ├── [**/auth/audit_log**](endpoints/auth/AUDIT-LOG.md) *(Account Log Audit)*  
 │   └── [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
 │   
 └──  
