@@ -23,7 +23,7 @@ count | int | Number of rows in current page
 totalCount | int | Total number of rows (all pages)
 totalPages | int | Total number of pages
 page | int | Current page number
-nav | object | `CompactNav` object. (See [**Compact Nav**](../PAGINATION.md#compact-navigation).
+nav | object | `CompactNav` object. (See [**Compact Nav**](../PAGINATION.md#compact-navigation)).
 
 #### `object` Log
 
