@@ -21,7 +21,7 @@ Coinam Client API documentation.
 │   ├── [**/auth/totp**](endpoints/auth/TOTP.md) *(Account 2FA/TOTP Setup)*  
 │   ├── [**/auth/profile**](endpoints/auth/PROFILE.md) *(Account profile & E-mail verifications)*  
 │   ├── [**/auth/dashboard**](endpoints/auth/DASHBOARD.md) *(Dashboard)*  
-│   ├── [**/auth/audit_log**](endpoints/auth/AUDIT-LOG.md) *(Account Log Audit)*  
+│   ├── [**/auth/log**](endpoints/auth/LOG.md) *(Account Log Audit)*  
 │   └── [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
 │   
 └──  
@@ -68,6 +68,7 @@ Code | Meaning | Possible Resolution
 `XSRF_ERROR` | XSRF/CSRF error | n/a
 `RECAPTCHA_REQ` | ReCaptcha validation is required | Send `reCaptchaRes` param
 `RECAPTCHA_FAILED` | ReCaptcha validation has failed | Reload reCaptcha so user may try again
+`PAGINATION_INVALID_LIMIT` | Invalid number of rows/entries limit per page | Send a appropriate value
 
 ### Authentication Errors
 
@@ -76,6 +77,7 @@ Code | Meaning | Possible Resolution
 `AUTH_NOT_LOGGED_IN` | User is not logged in; Attempting to access authenticated only controller | Redirect users to login screen
 `AUTH_USER_RETRIEVE_ERROR` | There was an internal error while retrieving user account | n/a
 `AUTH_TOKEN_MISMATCH` | User has logged in again using different device/browser | Redirect user to login screen; **Tell them they have their session has been overridden**
+`AUTH_USER_TIMEOUT` | Authenticated session has timed out | User needs to login again
 `AUTH_USER_DISABLED` | User account has been DISABLED | n/a
 `AUTH_USER_2FA_NOT_SETUP` | 2FA has not been setup for this account | Always force users to [**/auth/setup**](endpoints/auth/SETUP.md) right after Registration
 
