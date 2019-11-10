@@ -41,6 +41,5 @@ dateTime | string | Date time represented as string (`jS M Y H:i`)
 
 Code | Description| Possible Resolution
 --- | --- | ---
-logs | 
 
 * It is also possible to get one of [**Global Error Messages**](../../README.md#global-error-messages).
