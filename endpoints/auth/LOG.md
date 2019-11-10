@@ -2,9 +2,9 @@
 
 # Audit Log
 
-* Retrieve account logs
+* Retrieve audit account logs
 
-## `GET`  [/auth/profile]()
+## `GET`  [/auth/log]()
 
 ### Request Params
 
