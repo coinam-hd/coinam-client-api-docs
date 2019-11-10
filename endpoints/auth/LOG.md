@@ -35,7 +35,7 @@ log | string | Log message
 data | NULL/array | Data associated with log or NULL
 ipAddress | string | Logged IP address
 timeStamp | int | Timestamp of log
-dateTime | string | Date time represented as string (`d M Y H:i`)
+dateTime | string | Date time represented as string (`jS M Y H:i`)
 
 ### Errors
 
