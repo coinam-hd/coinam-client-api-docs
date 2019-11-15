@@ -1,6 +1,6 @@
-## Compact Navigation
+## Pagination & Compact Navigation
 
-#### `object` CompactNav
+## `object` CompactNav
 
 Param | Type |  Description
 --- | --- | --- 

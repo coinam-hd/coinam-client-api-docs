@@ -23,8 +23,10 @@ Coinam Client API documentation.
 │   ├── [**/auth/dashboard**](endpoints/auth/DASHBOARD.md) *(Dashboard)*  
 │   ├── [**/auth/log**](endpoints/auth/LOG.md) *(Account Log Audit)*  
 │   └── [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
+│   │   
 │   └── **Crypto** Endpoints  
 │       └── [**/auth/crypto/available_coins**](endpoints/auth/crypto/AVAILABLE-COINS.md) *(List of available crypto-currencies)*  
+│       └── [**/auth/crypto/wallets**](endpoints/auth/crypto/WALLETS.md) *(List existing OR create a wallet)*  
 │   
 └──  
 
@@ -71,6 +73,8 @@ Code | Meaning | Possible Resolution
 `RECAPTCHA_REQ` | ReCaptcha validation is required | Send `reCaptchaRes` param
 `RECAPTCHA_FAILED` | ReCaptcha validation has failed | Reload reCaptcha so user may try again
 `PAGINATION_INVALID_LIMIT` | Invalid number of rows/entries limit per page | Send a appropriate value
+`CRYPTO_INVALID` | Crypto-currency code is invalid | Send a valid crypto-currency code (alphanumeric 2-8 digits)
+`CRYPTO_RESTRICTED` | Crypto-currency access is restricted | User is not allowed to create/use wallets in this crypto-currency
 
 ### Authentication Errors
 

@@ -20,7 +20,7 @@ xsrf | hash32 | yes | XSRF token
 Param | Type |  Description
 --- | --- | --- 
 count | integer | Number of coins available to users
-coins | array | Indexed array of Coin objects. (See [**`object` Coin**](../../../models/COINS.md)).
+coins | array | Indexed array of Coin objects. (See [**`object` Coin**](../../../models/CRYPTO.md#object-coin)).
 
 ### Errors
 
