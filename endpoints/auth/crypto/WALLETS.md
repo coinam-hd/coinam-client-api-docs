@@ -20,7 +20,7 @@ coin | string | yes | Crypto-currency code (2-8 alphanumeric digits)
 Param | Type |  Description
 --- | --- | --- 
 count | integer | Number of coins available to users
-coin | **`object` Coin**](../../../models/CRYPTO.md#object-coin) | Coin object
+coin | [**`object` Coin**](../../../models/CRYPTO.md#object-coin) | Coin object
 wallets | array | Indexed array of `Wallet` objects. (See [**`object` Wallet**](../../../models/CRYPTO.md#object-wallet)).
 
 ### Errors
