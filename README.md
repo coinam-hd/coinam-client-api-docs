@@ -23,6 +23,8 @@ Coinam Client API documentation.
 │   ├── [**/auth/dashboard**](endpoints/auth/DASHBOARD.md) *(Dashboard)*  
 │   ├── [**/auth/log**](endpoints/auth/LOG.md) *(Account Log Audit)*  
 │   └── [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
+│   └── **Crypto** Endpoints  
+│       └── [**/auth/crypto/available_coins**](endpoints/auth/crypto/AVAILABLE-COINS.md) *(List of available crypto-currencies)*  
 │   
 └──  
 
@@ -32,7 +34,7 @@ Coinam Client API documentation.
 
 Header | Description
 --- | ---
-Coinam-Client-Token | Required for all endpoints except [**init_session**](endpoints/INIT_SESSION.md#get-init_session) endpoint
+Coinam-Client-Token | Required for all endpoints except [**`POST` /session**](endpoints/SESSION.md) endpoint
 Coinam-Client-Timestamp | Timestamp in UTC (GMT+0:00) timezone
 
 * Params can be sent as `application/json` or `application/x-www-form-urlencoded`
@@ -79,7 +81,7 @@ Code | Meaning | Possible Resolution
 `AUTH_TOKEN_MISMATCH` | User has logged in again using different device/browser | Redirect user to login screen; **Tell them they have their session has been overridden**
 `AUTH_USER_TIMEOUT` | Authenticated session has timed out | User needs to login again
 `AUTH_USER_DISABLED` | User account has been DISABLED | n/a
-`AUTH_USER_2FA_NOT_SETUP` | 2FA has not been setup for this account | Always force users to [**/auth/setup**](endpoints/auth/SETUP.md) right after Registration
+`AUTH_USER_2FA_NOT_SETUP` | 2FA has not been setup for this account | Always force users to [**Finish TOTP setup**](endpoints/auth/TOTP.md) right after Registration
 
 ### 2FA Error Messages
 
