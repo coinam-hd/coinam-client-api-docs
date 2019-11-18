@@ -22,8 +22,8 @@ Coinam Client API documentation.
 │   ├── [**/auth/profile**](endpoints/auth/PROFILE.md) *(Account profile & E-mail verifications)*  
 │   ├── [**/auth/dashboard**](endpoints/auth/DASHBOARD.md) *(Dashboard)*  
 │   ├── [**/auth/log**](endpoints/auth/LOG.md) *(Account Log Audit)*  
-│   ├── [**/auth/developers**](endpoints/auth/DEVELOPERS.md) *(Developers setup)*  
-│   ├── [**/auth/developers/webhooks**](endpoints/auth/dev/WEBHOOKS.md) *(Web Hooks setup)*  
+│   ├── [**/auth/dev**](endpoints/auth/DEV.md) *(Developers setup)*  
+│   ├── [**/auth/dev/webhooks**](endpoints/auth/dev/WEBHOOKS.md) *(Web Hooks setup)*  
 │   └── [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
 │   │   
 │   └── **Crypto** Endpoints  
@@ -34,7 +34,7 @@ Coinam Client API documentation.
 │       ├── [**/auth/crypto/wallet/@/@/messages**](endpoints/auth/crypto/wallet/MESSAGES.md) *(Sign or verify messages)*  
 │       ├── [**/auth/crypto/wallet/@/@/transactions**](endpoints/auth/crypto/wallet/TRANSACTIONS.md) *(Retrieve transactions history)*  
 │       ├── [**/auth/crypto/wallet/@/@/tx/spend**](endpoints/auth/crypto/wallet/transaction/SPEND.md) *(Submit a payment transaction)*  
-│       ├── [**/auth/crypto/wallet/@/@/developers/tokens**](endpoints/auth/crypto/wallet/transaction/spend.md) *(Submit a payment transaction)*  
+│       ├── [**/auth/crypto/wallet/@/@/dev/tokens**](endpoints/auth/crypto/wallet/dev/tokens.md) *(Wallet API tokens)*  
 │       └── [**/auth/crypto/wallet/@/@/info**](endpoints/auth/crypto/wallet/INFO.md) *(Retrieve information about wallet)*  
 │   
 └──  
