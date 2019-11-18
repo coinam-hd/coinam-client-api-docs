@@ -51,5 +51,6 @@ Code | Description| Possible Resolution
 SES_REQ | Param "newSecret" is required | n/a
 SES_INVALID | New shared secret value contains an illegal character | Allowed are alphanumeric digits (`a-z0-9`), `spaces` and `-._$!#@` ; Note that spaces at start or end of the string are trimmed
 SES_LEN | Length of new encryption secret must be between 8 and 32 bytes | n/a
+SES_SAME | New and existing SES values are the same | n/a
 
 * It is also possible to get one of [**Global Error Messages**](../../README.md#global-error-messages).
