@@ -19,7 +19,13 @@ label | string / NULL | User specific wallet name/label
 createdOn | int | Timestamp (UTC) of wallet creation
 stats | 
 
-## `object` WalletStats
+## `object` Address
 
 Param | Type |  Description
 --- | --- | --- 
+address | string | Crypto-currency address
+label | string / NULL | User specific label (or NULL is none was specified)
+isArchived | bool | Flag indicates if address has been marked archived
+isImported | bool | Flag indicates if address was imported (rather then derived/generated internally)
+isExported | bool | Flag indicates if private key has been exported to user
+createOn | int | Timestamp in UTC

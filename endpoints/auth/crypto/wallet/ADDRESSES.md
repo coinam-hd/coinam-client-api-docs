@@ -50,7 +50,7 @@ perPage | int | no | Number of logs per page, select from `25`, `50` or `100`. D
 
 Param | Type |  Description
 --- | --- | --- 
-addresses | array | An array of `Address` objects
+addresses | array | An indexed array of (See [**`object` Address**](../../../../models/CRYPTO.md#object-address)) objects.
 count | int | Number of rows in current page
 totalCount | int | Total number of rows (all pages)
 totalPages | int | Total number of pages
