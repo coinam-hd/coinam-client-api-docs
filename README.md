@@ -76,6 +76,16 @@ Code | Meaning | Possible Resolution
 `CRYPTO_INVALID` | Crypto-currency code is invalid | Send a valid crypto-currency code (alphanumeric 2-8 digits)
 `CRYPTO_RESTRICTED` | Crypto-currency access is restricted | User is not allowed to create/use wallets in this crypto-currency
 
+## Wallet Endpoints
+
+Code | Meaning | Possible Resolution
+--- | --- | ---
+`WALLET_INVALID_COIN` | Invalid URL coin code | Send a valid crypto-currency code
+`WALLET_INVALID_IDENTIFIER` |  Wallet identifier sent via URL is invalid | Send a valid wallet identifier string
+`WALLET_NOT_FOUND` | No such wallet exists or is not owned by authenticated user | n/a
+`WALLET_COIN_MISMATCH` | Wallet coin does not match with crypto-currency code sent via URL | n/a
+`WALLET_STATUS` | Wallet is inaccessible because of its status | Contact support
+
 ### Authentication Errors
 
 Code | Meaning | Possible Resolution
