@@ -10,7 +10,8 @@
 Param | Type | Required | Description
 --- | --- | --- | ---
 xsrf | hash32 | yes | XSRF token
-address | string  | Crypto-currency address
+address | string  | yes |  Crypto-currency address
+totpCode | string/integer | yes | 6 digit TOTP code
 
 ### Success Response
 
