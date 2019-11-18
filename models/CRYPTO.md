@@ -16,8 +16,9 @@ status | string | One of "active", "frozen" or "disabled"
 identifier | string | 36-byte wallet identifier
 coin | string | Alphanumeric 2-8 digit crypto-currency code
 label | string / NULL | User specific wallet name/label
+allowKeysExport | bool | Indicates if owner can export private keys
+allowKeysImport | bool | Indicates if owner can import private keys
 createdOn | int | Timestamp (UTC) of wallet creation
-stats | 
 
 ## `object` Address
 
