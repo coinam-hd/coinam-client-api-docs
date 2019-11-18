@@ -87,5 +87,7 @@ address | object | [**`object` Address**](../../../../models/CRYPTO.md#object-ad
 
 Code | Description| Possible Resolution
 --- | --- | ---
+`NO_ADDRESSES` | Wallet does not have any addresses generated | n/a
+
 
 * It is also possible to get one of [**Global Error Messages**](../../../../README.md#global-error-messages).
