@@ -27,6 +27,7 @@ Coinam Client API documentation.
 │   └── **Crypto** Endpoints  
 │       └── [**/auth/crypto/available_coins**](endpoints/auth/crypto/AVAILABLE-COINS.md) *(List of available crypto-currencies)*  
 │       └── [**/auth/crypto/wallets**](endpoints/auth/crypto/WALLETS.md) *(List existing OR create a wallet)*  
+│       └── [**/auth/crypto/wallet/@/@/addresses**](endpoints/auth/crypto/wallet/ADDRESSES.md) *(List or generate payment addresses)*  
 │   
 └──  
 
