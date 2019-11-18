@@ -25,6 +25,9 @@ data | string | Exported private key
 
 Code | Description| Possible Resolution
 --- | --- | ---
+`ADDR_REQ` | Address param is required | n/a
+`ADDR_INVALID` | Address param is invalid | Send a correct address
+`ADDR_NOT_FOUND` | Address not found in current wallet | Send a correct address
 `ADDR_EXPORT_NA` | Crypto-currency protocol does not support private key exporting | n/a
 `ADDR_EXPORT_DISABLED` | Wallet does not have permission to export an address | n/a
 
