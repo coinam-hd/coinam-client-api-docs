@@ -22,13 +22,20 @@ Coinam Client API documentation.
 │   ├── [**/auth/profile**](endpoints/auth/PROFILE.md) *(Account profile & E-mail verifications)*  
 │   ├── [**/auth/dashboard**](endpoints/auth/DASHBOARD.md) *(Dashboard)*  
 │   ├── [**/auth/log**](endpoints/auth/LOG.md) *(Account Log Audit)*  
+│   ├── [**/auth/developers**](endpoints/auth/DEVELOPERS.md) *(Developers setup)*  
+│   ├── [**/auth/developers/webhooks**](endpoints/auth/dev/WEBHOOKS.md) *(Web Hooks setup)*  
 │   └── [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
 │   │   
 │   └── **Crypto** Endpoints  
 │       └── [**/auth/crypto/available_coins**](endpoints/auth/crypto/AVAILABLE-COINS.md) *(List of available crypto-currencies)*  
-│       └── [**/auth/crypto/wallets**](endpoints/auth/crypto/WALLETS.md) *(List existing OR create a wallet)*  
+│       ├── [**/auth/crypto/wallets**](endpoints/auth/crypto/WALLETS.md) *(List existing OR create a wallet)*  
+│       ├── [**/auth/crypto/wallet/@/@/addresses**](endpoints/auth/crypto/wallet/ADDRESSES.md) *(List or generate payment addresses)*  
+│       ├── [**/auth/crypto/wallet/@/@/export**](endpoints/auth/crypto/wallet/EXPORT.md) *(Export a private key or wallet)*  
+│       ├── [**/auth/crypto/wallet/@/@/messages**](endpoints/auth/crypto/wallet/MESSAGES.md) *(Sign or verify messages)*  
+│       ├── [**/auth/crypto/wallet/@/@/transactions**](endpoints/auth/crypto/wallet/TRANSACTIONS.md) *(Retrieve transactions history)*  
+│       ├── [**/auth/crypto/wallet/@/@/tx/spend**](endpoints/auth/crypto/wallet/transaction/SPEND.md) *(Submit a payment transaction)*  
+│       ├── [**/auth/crypto/wallet/@/@/developers/tokens**](endpoints/auth/crypto/wallet/transaction/spend.md) *(Submit a payment transaction)*  
 │       └── [**/auth/crypto/wallet/@/@/info**](endpoints/auth/crypto/wallet/INFO.md) *(Retrieve information about wallet)*  
-│       └── [**/auth/crypto/wallet/@/@/addresses**](endpoints/auth/crypto/wallet/ADDRESSES.md) *(List or generate payment addresses)*  
 │   
 └──  
 
