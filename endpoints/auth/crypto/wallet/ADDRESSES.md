@@ -3,7 +3,7 @@
 # Addresses
 
 * Get list of all addresses (paginated)
-* Get primary wallet address
+* Get most recent wallet address
 * Create a new address
 
 ## Create a new address
@@ -35,6 +35,8 @@ Code | Description| Possible Resolution
 
 * It is also possible to get one of [**Global Error Messages**](../../../../README.md#global-error-messages).
 
+---
+
 ## Retrieve List of Addresses
 ##### `GET`  [/auth/crypto/wallet/@/@/addresses]()
 
@@ -56,6 +58,30 @@ totalCount | int | Total number of rows (all pages)
 totalPages | int | Total number of pages
 page | int | Current page number
 nav | object | `CompactNav` object. (See [**Compact Nav**](../../../../models/PAGINATION.md#object-compactnav)).
+
+### Errors
+
+Code | Description| Possible Resolution
+--- | --- | ---
+
+* It is also possible to get one of [**Global Error Messages**](../../../../README.md#global-error-messages).
+
+---
+
+## Get most recent address
+##### `GET`  [/auth/crypto/wallet/@/@/addresses?last]()
+
+### Request Params
+
+Param | Type | Required | Description
+--- | --- | --- | ---
+xsrf | hash32 | yes | XSRF token
+
+### Success Response
+
+Param | Type |  Description
+--- | --- | --- 
+address | object | [**`object` Address**](../../../../models/CRYPTO.md#object-address)
 
 ### Errors
 
