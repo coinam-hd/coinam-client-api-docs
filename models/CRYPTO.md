@@ -30,3 +30,16 @@ isArchived | bool | Flag indicates if address has been marked archived
 isImported | bool | Flag indicates if address was imported (rather then derived/generated internally)
 isExported | bool | Flag indicates if private key has been exported to user
 createOn | int | Timestamp in UTC
+
+## `object` WalletAPIToken
+
+Param | Type |  Description
+--- | --- | --- 
+id | int | A unique identifier
+short | string | Initial 20 byte of 64 byte token
+whitelist | array | Indexed array containing whitelisted IP addresses
+allowCreateAddr | bool | If token allows created of new addresses
+allowCreateSpend | bool | If token allows spending
+maxSpendPerTx | string | Maximum amount per transaction that can be spent
+maxSpendPerDay | string | Maximum amount per day
+createdOn | int | Timestamp in UTC
