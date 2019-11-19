@@ -34,7 +34,7 @@ Coinam Client API documentation.
 │       ├── [**/auth/crypto/wallet/@/@/messages**](endpoints/auth/crypto/wallet/MESSAGES.md) *(Sign or verify messages)*  
 │       ├── [**/auth/crypto/wallet/@/@/transactions**](endpoints/auth/crypto/wallet/TRANSACTIONS.md) *(Retrieve transactions history)*  
 │       ├── [**/auth/crypto/wallet/@/@/tx/spend**](endpoints/auth/crypto/wallet/transaction/SPEND.md) *(Submit a payment transaction)*  
-│       ├── [**/auth/crypto/wallet/@/@/dev/tokens**](endpoints/auth/crypto/wallet/dev/tokens.md) *(Wallet API tokens)*  
+│       ├── [**/auth/crypto/wallet/@/@/dev/tokens**](endpoints/auth/crypto/wallet/dev/TOKENS.md) *(Wallet API tokens)*  
 │       └── [**/auth/crypto/wallet/@/@/info**](endpoints/auth/crypto/wallet/INFO.md) *(Retrieve information about wallet)*  
 │   
 └──  
