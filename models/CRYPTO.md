@@ -38,6 +38,7 @@ Param | Type |  Description
 id | int | A unique identifier
 short | string | Initial 20 byte of 64 byte token
 whitelist | array | Indexed array containing whitelisted IP addresses
+status | bool | Determines if token is enabled or disabled
 allowCreateAddr | bool | If token allows created of new addresses
 allowCreateSpend | bool | If token allows spending
 maxSpendPerTx | string | Maximum amount per transaction that can be spent
