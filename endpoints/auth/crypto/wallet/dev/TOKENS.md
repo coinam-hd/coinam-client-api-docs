@@ -24,7 +24,7 @@ Code | Description| Possible Resolution
 ---
 
 ## Retrieve Info on single API token
-##### `GET`  [/auth/crypto/wallet/@/@/dev/tokens?list]()
+##### `GET`  [/auth/crypto/wallet/@/@/dev/tokens?info]()
 
 ### Request Params
 
