@@ -89,3 +89,29 @@ Code | Description| Possible Resolution
 `WALLET_TOKENS_LIMIT` | Wallet has reached limit of API tokens | No new tokens may be created
 
 * It is also possible to get one of [**Global Error Messages**](../../../../../README.md#global-error-messages).
+
+---
+
+## Delete a token
+##### `DELETE`  [/auth/crypto/wallet/@/@/dev/tokens]()
+
+### Request Params
+
+Param | Type | Required | Description
+--- | --- | --- | ---
+xsrf | hash32 | yes | XSRF token
+tokenId | int | yes | Token ID to delete
+
+### Success Response
+
+Param | Type |  Description
+--- | --- | --- 
+
+### Errors
+
+Code | Description| Possible Resolution
+--- | --- | ---
+`TOKEN_ID_REQ` | A token ID is required | Send "tokenId" param
+`TOKEN_NOT_FOUND` | No such API token exists | send a correct token ID
+
+* It is also possible to get one of [**Global Error Messages**](../../../../../README.md#global-error-messages).
