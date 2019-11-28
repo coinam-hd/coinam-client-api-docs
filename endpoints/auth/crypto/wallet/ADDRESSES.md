@@ -68,6 +68,33 @@ Code | Description| Possible Resolution
 
 ---
 
+## Get information on an address
+##### `GET`  [/auth/crypto/wallet/@/@/addresses?info]()
+
+### Request Params
+
+Param | Type | Required | Description
+--- | --- | --- | ---
+xsrf | hash32 | yes | XSRF token
+address | string | yes | Crypto-currency address
+
+### Success Response
+
+Param | Type |  Description
+--- | --- | --- 
+address | object | [**`object` Address**](../../../../models/CRYPTO.md#object-address)
+
+### Errors
+
+Code | Description| Possible Resolution
+--- | --- | ---
+`ADDRESS_NOT_FOUND` | No such address was found | n/a
+`ADDRESS_INVALID` | Address param sent in request contains an illegal character | n/a
+
+* It is also possible to get one of [**Global Error Messages**](../../../../README.md#global-error-messages).
+
+---
+
 ## Get most recent address
 ##### `GET`  [/auth/crypto/wallet/@/@/addresses?last]()
 
@@ -88,6 +115,5 @@ address | object | [**`object` Address**](../../../../models/CRYPTO.md#object-ad
 Code | Description| Possible Resolution
 --- | --- | ---
 `NO_ADDRESSES` | Wallet does not have any addresses generated | n/a
-
 
 * It is also possible to get one of [**Global Error Messages**](../../../../README.md#global-error-messages).
