@@ -39,7 +39,7 @@ Param | Type | Required | Description
 --- | --- | --- | ---
 xsrf | hash32 | yes | XSRF token
 coin | string | yes | Crypto-currency code (2-8 alphanumeric digits)
-label | string | yes | A name/label for new wallet (maximum 32 characters)
+newLabel | string | yes | A name/label for new wallet (maximum 32 characters)
 
 ### Success Response
 
