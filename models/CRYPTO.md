@@ -36,6 +36,7 @@ createOn | int | Timestamp in UTC
 Param | Type |  Description
 --- | --- | --- 
 id | int | A unique identifier
+label | string | User-specified label for this API token
 short | string | Initial 20 byte of 64 byte token
 whitelist | array | Indexed array containing whitelisted IP addresses
 status | bool | Determines if token is enabled or disabled
