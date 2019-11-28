@@ -90,6 +90,7 @@ Code | Description| Possible Resolution
 `AMOUNT_MIN_ERR` | Amount is lower then least possible | Send a correct amount; Check `param` value of response
 `IP_WHITELIST_REQ` | IP addresses whitelist is required | Send at least one IP address to whitelist
 `IP_WHITELIST_INVALID` | One of the IP addresses is invalid | Check response param `invalidIPNum` 
+`IP_WHITELIST_LIMIT` | Whitelist has limit of 10 IP addresses maximum | Send maximum of 10 IP addresses
 `WALLET_TOKENS_LIMIT` | Wallet has reached limit of API tokens | No new tokens may be created
 
 * It is also possible to get one of [**Global Error Messages**](../../../../../README.md#global-error-messages).
