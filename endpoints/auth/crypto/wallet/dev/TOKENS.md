@@ -59,6 +59,7 @@ Param | Type | Required | Description
 --- | --- | --- | ---
 xsrf | hash32 | yes | XSRF token
 tokenId | int | **Depends** | **Important:** if param "tokenId" is NOT provided, a new wallet API token shall be created otherwise existing object will be updated!
+label | string | no | A label for this API token
 status | string | no | If value sent is "on" then its considered TRUE otherwise FALSE
 allowCreateAddr | string | no | If value sent is "on" then its considered TRUE otherwise FALSE
 allowSpend | string | no | If value sent is "on" then its considered TRUE otherwise FALSE
@@ -81,6 +82,9 @@ Code | Description| Possible Resolution
 --- | --- | ---
 `TOKEN_ID_REQ` | A token ID is required | Send "tokenId" param
 `TOKEN_NOT_FOUND` | No such API token exists | send a correct token ID
+`LABEL_REQ` | Label is required | Send a label for API token 
+`LABEL_LEN` | Label length error | Label must be 3-16 characters long
+`LABEL_INVALID` | Label contains an illegal character | n/a
 `NO_CHANGES` | There are no changes to be saved | n/a
 `AMOUNT_INVALID` | Amount is invalid | Send a correct amount; Check `param` value of response
 `AMOUNT_MIN_ERR` | Amount is lower then least possible | Send a correct amount; Check `param` value of response
