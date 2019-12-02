@@ -67,6 +67,8 @@ Code | Description| Possible Resolution
 `ADDR_REQ` | Address is required | n/a
 `ADDR_INVALID` | Address is invalid | n/a
 `ADDR_OWNERSHIP` | Address is not owned (or is not in this specific wallet) | n/a
+`SIGNATURE_REQ` | Signature is required | n/a
+`SIGNATURE_INVALID` | Signature is invalid | n/a
 `MESSAGE_REQ` | Message is required | n/a
 `MESSAGE_LEN` | Message must be between 2 and 512 bytes | n/a
 `MESSAGE_INVALID` | Message contains an illegal character | UTF-8 not supported
