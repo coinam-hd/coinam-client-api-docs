@@ -27,7 +27,7 @@ Coinam Client API documentation.
 │   └── [**/auth/logout**](endpoints/auth/LOGOUT.md) *(Clears an authenticated session)*  
 │   │   
 │   └── **Crypto** Endpoints  
-│       └── [**/auth/crypto/available_coins**](endpoints/auth/crypto/AVAILABLE-COINS.md) *(List of available crypto-currencies)*  
+│       ├── [**/auth/crypto/available_coins**](endpoints/auth/crypto/AVAILABLE-COINS.md) *(List of available crypto-currencies)*  
 │       ├── [**/auth/crypto/wallets**](endpoints/auth/crypto/WALLETS.md) *(List existing OR create a wallet)*  
 │       ├── [**/auth/crypto/wallet/@/@/addresses**](endpoints/auth/crypto/wallet/ADDRESSES.md) *(List or generate payment addresses)*  
 │       ├── [**/auth/crypto/wallet/@/@/export**](endpoints/auth/crypto/wallet/EXPORT.md) *(Export a private key or wallet)*  
@@ -35,7 +35,7 @@ Coinam Client API documentation.
 │       ├── [**/auth/crypto/wallet/@/@/transactions**](endpoints/auth/crypto/wallet/TRANSACTIONS.md) *(Retrieve transactions history)*  
 │       ├── [**/auth/crypto/wallet/@/@/tx/spend**](endpoints/auth/crypto/wallet/transaction/SPEND.md) *(Submit a payment transaction)*  
 │       ├── [**/auth/crypto/wallet/@/@/dev/tokens**](endpoints/auth/crypto/wallet/dev/TOKENS.md) *(Wallet API tokens)*  
-│       └── [**/auth/crypto/wallet/@/@/info**](endpoints/auth/crypto/wallet/INFO.md) *(Retrieve information about wallet)*  
+│       ├── [**/auth/crypto/wallet/@/@/info**](endpoints/auth/crypto/wallet/INFO.md) *(Retrieve information about wallet)*  
 │       └── [**/auth/crypto/wallet/@/@/edit**](endpoints/auth/crypto/wallet/EDIT.md) *(Edit wallet parameters)*  
 │   
 └──  
