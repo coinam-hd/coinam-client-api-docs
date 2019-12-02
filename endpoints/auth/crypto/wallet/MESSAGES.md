@@ -31,8 +31,42 @@ message | string | Message that was signed (whitespaces at beginning/end of stri
 
 Code | Description| Possible Resolution
 --- | --- | ---
+`UNSUPPORTED_PROTOCOL` | Crypto-currency protocol of wallet does not support this functionality | n/a
 `ADDR_REQ` | Address is required | n/a
-`ADDR_INVALID` | Address is invalid or not owned | n/a
+`ADDR_INVALID` | Address is invalid | n/a
+`ADDR_OWNERSHIP` | Address is not owned (or is not in this specific wallet) | n/a
+`MESSAGE_REQ` | Message is required | n/a
+`MESSAGE_LEN` | Message must be between 2 and 512 bytes | n/a
+`MESSAGE_INVALID` | Message contains an illegal character | UTF-8 not supported
+
+* It is also possible to get one of [**Global Error Messages**](../../../../README.md#global-error-messages).
+
+## Verify a Signed Message
+##### `POST`  [/auth/crypto/wallet/@/@/messages?verify_message]()
+
+### Request Params
+
+Param | Type | Required | Description
+--- | --- | --- | ---
+xsrf | hash32 | yes | XSRF token
+signature | string | yes | Base64 encoded signature
+address | string | yes | Address/Public Key that was used to sign this message
+message | string | yes | Exact message that was signed
+
+### Success Response
+
+Param | Type |  Description
+--- | --- | --- 
+
+### Errors
+
+Code | Description| Possible Resolution
+--- | --- | ---
+`UNSUPPORTED_PROTOCOL` | Crypto-currency protocol of wallet does not support this functionality | n/a
+`ADDR_REQ` | Address is required | n/a
+`ADDR_REQ` | Address is required | n/a
+`ADDR_INVALID` | Address is invalid | n/a
+`ADDR_OWNERSHIP` | Address is not owned (or is not in this specific wallet) | n/a
 `MESSAGE_REQ` | Message is required | n/a
 `MESSAGE_LEN` | Message must be between 2 and 512 bytes | n/a
 `MESSAGE_INVALID` | Message contains an illegal character | UTF-8 not supported
