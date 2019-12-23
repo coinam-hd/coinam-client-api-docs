@@ -33,14 +33,16 @@ Coinam Client API documentation.
 │       ├── [**/auth/crypto/wallet/@/@/export**](endpoints/auth/crypto/wallet/EXPORT.md) *(Export a private key or wallet)*  
 │       ├── [**/auth/crypto/wallet/@/@/messages**](endpoints/auth/crypto/wallet/MESSAGES.md) *(Sign or verify messages)*  
 │       ├── [**/auth/crypto/wallet/@/@/transactions**](endpoints/auth/crypto/wallet/TRANSACTIONS.md) *(Retrieve transactions history)*  
-│       ├── [**/auth/crypto/wallet/@/@/tx/spend**](endpoints/auth/crypto/wallet/transaction/SPEND.md) *(Submit a payment transaction)*  
 │       ├── [**/auth/crypto/wallet/@/@/dev/tokens**](endpoints/auth/crypto/wallet/dev/TOKENS.md) *(Wallet API tokens)*  
 │       ├── [**/auth/crypto/wallet/@/@/info**](endpoints/auth/crypto/wallet/INFO.md) *(Retrieve information about wallet)*  
-│       ├── [**/auth/crypto/wallet/@/@/transactions**](endpoints/auth/crypto/wallet/TRANSACTIONS.md) *(Retrieves all wallet transactions)*  
 │       ├── *UTXO Wallets Only:*  
-│       ├── [**/auth/crypto/wallet/@/@/utxo/list_unspent**](endpoints/auth/crypto/wallet/utxo/LIST.md) *(Retrieve a list of spent and unspent UTXOs)*  
-│       ├── [**/auth/crypto/wallet/@/@/utxo/tx_create**](endpoints/auth/crypto/wallet/utxo/tx/CREATE.md) *(Create a signed/unSigned raw transaction)*  
-│       ├── [**/auth/crypto/wallet/@/@/utxo/tx_broadcast**](endpoints/auth/crypto/wallet/utxo/tx/BROADCAST.md) *(Broadcast a signed transaction)*  
+│       ├── [**/auth/crypto/wallet/@/@/utxo/list**](endpoints/auth/crypto/wallet/utxo/LIST.md) *(Retrieve a list of spent and unspent UTXOs)*  
+│       ├── [**/auth/crypto/wallet/@/@/utxo/tx_create**](endpoints/auth/crypto/wallet/utxo/TX-CREATE.md) *(Create a signed/unSigned raw transaction)*  
+│       ├── [**/auth/crypto/wallet/@/@/utxo/tx_broadcast**](endpoints/auth/crypto/wallet/utxo/TX-BROADCAST.md) *(Broadcast a signed transaction)*  
+│       ├── *Ethereum Wallets Only:*  
+│       ├── [**/auth/crypto/wallet/@/@/ethereum/assets**](endpoints/auth/crypto/wallet/ethereum/ASSETS.md) *(List or append Ethereum assets)*  
+│       ├── [**/auth/crypto/wallet/@/@/ethereum/spend**](endpoints/auth/crypto/wallet/ethereum/SPEND.md) *(Simple Ethereum transfer)*  
+│       ├── [**/auth/crypto/wallet/@/@/ethereum/spend**](endpoints/auth/crypto/wallet/ethereum/CONTRACTS.md) *(Manage ethereum contracts)*  
 │       └── [**/auth/crypto/wallet/@/@/edit**](endpoints/auth/crypto/wallet/EDIT.md) *(Edit wallet parameters)*  
 │   
 └──  
