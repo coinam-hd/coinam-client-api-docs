@@ -21,6 +21,7 @@ Param | Type |  Description
 --- | --- | --- 
 count | integer | Number of coins available to users
 coin | [**`object` Coin**](../../../models/CRYPTO.md#object-coin) | Coin object
+protocol | object | See [**`object` Protocol**](../../../models/CRYPTO.md#object-protocol)
 wallets | array | Indexed array of `Wallet` objects. (See [**`object` Wallet**](../../../models/CRYPTO.md#object-wallet)).
 
 ### Errors
@@ -40,6 +41,7 @@ Param | Type | Required | Description
 xsrf | hash32 | yes | XSRF token
 coin | string | yes | Crypto-currency code (2-8 alphanumeric digits)
 newLabel | string | yes | A name/label for new wallet (maximum 32 characters)
+type | string | **depends** | If a selection is available under `walletsTypes` prop in [**`object` Protocol**](../../../models/CRYPTO.md#object-protocol) then it is required
 
 ### Success Response
 
@@ -54,6 +56,8 @@ Code | Description| Possible Resolution
 `LABEL_REQ` | Wallet label param is required | n/a
 `LABEL_LEN` | Wallet label length must be between 3 and 32 digits | n/a
 `LABEL_INVALID` | Wallet label contains an illegal character | n/a
+`WALLET_TYPE_REQ` | Wallet type selection is required | n/a
+`WALLET_TYPE_INVALID` | Selected wallet type is not a valid option | n/a
 `CRYPTO_WALLETS_NA` | Wallets of said crypto are not available to this user | n/a
 `CRYPTO_WALLETS_LIMIT` | User has reached limit of maximum wallets allowed in said crypto | Check "limit" and "count" params in response
 

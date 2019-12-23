@@ -8,6 +8,15 @@ sign | string / NULL | Sign/symbol for crypto-currency, normally a multi-byte UT
 scale | int | Precision for internal processing
 decimals | int | Precision acceptable for user input
 
+## `object` Protocol
+
+Param | Type |  Description
+--- | --- | --- 
+requiresPayer | bool | Payer address is required to spend transaction?
+maximumPayees | int | Maximum number of payees
+walletsTypes | array | Indexed array of types of wallets offered; If empty, no selection is necessary
+minimumTransfer | string | Minimum transaction amount
+
 ## `object` Wallet
 
 Param | Type |  Description
@@ -45,3 +54,30 @@ allowCreateSpend | bool | If token allows spending
 maxSpendPerTx | string | Maximum amount per transaction that can be spent
 maxSpendPerDay | string | Maximum amount per day
 createdOn | int | Timestamp in UTC
+
+## `object` CryptoAsset
+
+Param | Type |  Description
+--- | --- | --- 
+id | string | Asset unique identifier
+code | string / NULL | Asset's symbol/code
+scale | int | Asset's scaling/decimals value
+usd_rate | int | 
+
+## `object` WalletBalance
+
+Param | Type |  Description
+--- | --- | --- 
+wallet | string | 36 byte wallet identifier
+confirmed | string | Confirmed (spendable) balance
+unconfirmed | string | Unconfirmed balance
+
+## `object` AddressBalance
+
+Param | Type |  Description
+--- | --- | --- 
+asset | null/object | `NULL` for native asset, otherwise 
+address | string | Crypto-currency address
+confirmed | string | Confirmed (spendable) balance
+unconfirmed | string | Unconfirmed balance
+
