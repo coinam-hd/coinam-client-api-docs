@@ -42,7 +42,7 @@ Coinam Client API documentation.
 │       ├── *Ethereum Wallets Only:*  
 │       ├── [**/auth/crypto/wallet/@/@/ethereum/assets**](endpoints/auth/crypto/wallet/ethereum/ASSETS.md) *(List or append Ethereum assets)*  
 │       ├── [**/auth/crypto/wallet/@/@/ethereum/spend**](endpoints/auth/crypto/wallet/ethereum/SPEND.md) *(Simple Ethereum transfer)*  
-│       ├── [**/auth/crypto/wallet/@/@/ethereum/spend**](endpoints/auth/crypto/wallet/ethereum/CONTRACTS.md) *(Manage ethereum contracts)*  
+│       ├── [**/auth/crypto/wallet/@/@/ethereum/contracts**](endpoints/auth/crypto/wallet/ethereum/CONTRACTS.md) *(Manage ethereum contracts)*  
 │       └── [**/auth/crypto/wallet/@/@/edit**](endpoints/auth/crypto/wallet/EDIT.md) *(Edit wallet parameters)*  
 │   
 └──  
