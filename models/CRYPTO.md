@@ -55,6 +55,36 @@ maxSpendPerTx | string | Maximum amount per transaction that can be spent
 maxSpendPerDay | string | Maximum amount per day
 createdOn | int | Timestamp in UTC
 
+## `object` TransactionEntry
+
+Param | Type |  Description
+--- | --- | --- 
+status | string | Transaction's current known state (possible values include "OK" and "ORPHANED")
+coin | string | Crypto-currency code
+tx | string | Transaction ID (64 to 66 characters). This is **NOT** a unique identifier, several entries of having different addresses but same TX id are possible
+address | string | Address (owned) that transaction relates to
+value | string | Transaction value
+valueType | string | It is either "in" or "out", where "in" means value received (positive) and "out" means value spent (negative)
+valueAssetId | string / NULL | Asset ID if it is an asset transfer (i.e. Ethereum ERC-20)
+valueUsdRate | string / NULL | USD rate at time of transaction was logged. (**NOTE:** rate is according to the time TX is logged, not when it was made, therefore can be inaccurate)
+txTimeStamp | int | Transaction time stamp (probably when the transaction was first seen or mined)
+timeStamp | int | Transaction time stamp when it was logged
+
+# `object` WebHook
+
+Param | Type |  Description
+--- | --- | --- 
+id | int | Web hook unique identifier
+method | string | "GET" or "POST"
+url | string | Web hook URL starting with "http://" or "https://"
+verifySSL | bool | If set to FALSE then SSL validation will be ignored when sending payload
+httpAuthUsername | string / NULL | Used if web hook URL is protected with "HTTP Basic authorization"
+httpAuthPassword | string / NULL | Used if web hook URL is protected with "HTTP Basic authorization"
+
+---
+
+## Pending
+
 ## `object` CryptoAsset
 
 Param | Type |  Description
@@ -62,7 +92,6 @@ Param | Type |  Description
 id | string | Asset unique identifier
 code | string / NULL | Asset's symbol/code
 scale | int | Asset's scaling/decimals value
-usd_rate | int | 
 
 ## `object` WalletBalance
 
