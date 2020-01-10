@@ -14,8 +14,16 @@ Param | Type |  Description
 --- | --- | --- 
 requiresPayer | bool | Payer address is required to spend transaction?
 maximumPayees | int | Maximum number of payees
-walletsTypes | array | Indexed array of types of wallets offered; If empty, no selection is necessary
+walletsTypes | array | Indexed array of types of CryptoWalletsType objects (See [**`object` CryptoWalletsType**](#object-cryptowalletstype))
 minimumTransfer | string | Minimum transaction amount
+
+## `object` CryptoWalletsType
+
+Param | Type |  Description
+--- | --- | --- 
+id | string | Primary identifier of wallet type
+name | string | Name of wallet type
+recoveryOpts | array/NULL | Recovery options available
 
 ## `object` Wallet
 

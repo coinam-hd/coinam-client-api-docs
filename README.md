@@ -29,6 +29,7 @@ Coinam Client API documentation.
 │   └── **Crypto** Endpoints  
 │       ├── [**/auth/crypto/available_coins**](endpoints/auth/crypto/AVAILABLE-COINS.md) *(List of available crypto-currencies)*  
 │       ├── [**/auth/crypto/wallets**](endpoints/auth/crypto/WALLETS.md) *(List existing OR create a wallet)*  
+│       ├── [**/auth/crypto/wallet/@/@/activate**](endpoints/auth/crypto/wallet/ACTIVATE.md) *(Activate a new wallet)*  
 │       ├── [**/auth/crypto/wallet/@/@/addresses**](endpoints/auth/crypto/wallet/ADDRESSES.md) *(List or generate payment addresses)*  
 │       ├── [**/auth/crypto/wallet/@/@/export**](endpoints/auth/crypto/wallet/EXPORT.md) *(Export a private key or wallet)*  
 │       ├── [**/auth/crypto/wallet/@/@/messages**](endpoints/auth/crypto/wallet/MESSAGES.md) *(Sign or verify messages)*  
@@ -102,6 +103,7 @@ Code | Meaning | Possible Resolution
 `WALLET_NOT_FOUND` | No such wallet exists or is not owned by authenticated user | n/a
 `WALLET_COIN_MISMATCH` | Wallet coin does not match with crypto-currency code sent via URL | n/a
 `WALLET_STATUS` | Wallet is inaccessible because of its status | Contact support
+`WALLET_STATUS_NEW` | Wallet is new, must be activated | Redirection to wallet/activation endpoint
 
 ### Authentication Errors
 
