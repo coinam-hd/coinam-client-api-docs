@@ -29,7 +29,7 @@ recoveryOpts | array/NULL | Recovery options available
 
 Param | Type |  Description
 --- | --- | --- 
-status | string | One of "active", "frozen" or "disabled"
+status | string | One of "new", "active", "frozen" or "disabled"
 identifier | string | 36-byte wallet identifier
 coin | string | Alphanumeric 2-8 digit crypto-currency code
 label | string / NULL | User specific wallet name/label
