@@ -12,6 +12,7 @@ Coinam Client API documentation.
 
 ├── Endpoints  
 │   ├── [**/session**](endpoints/SESSION.md) *(Initiate a new session OR retrieve information of existing)*  
+│   ├── [**/custodians**](endpoints/CUSTODIANS.md) *(Information on custody partners)*  
 │   ├── [**/countries**](endpoints/COUNTRIES.md) *(Get list of countries)*  
 │   ├── [**/register**](endpoints/REGISTER.md) *(Signup / Registration of new user)*  
 │   └── [**/login**](endpoints/LOGIN.md) *(Authenticate session as a registered user)*  
