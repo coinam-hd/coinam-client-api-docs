@@ -47,6 +47,7 @@ Param | Type | Required | Description
 xsrf | hash32 | yes | XSRF token
 page | int | no | Pagination page number. Defaults to `1`.
 perPage | int | no | Number of logs per page, select from `25`, `50` or `100`. Defaults to `50`.
+match | string / NULL | no | A clause to match address or label with
 
 ### Success Response
 
@@ -63,6 +64,7 @@ nav | object | `CompactNav` object. (See [**Compact Nav**](../../../../models/PA
 
 Code | Description| Possible Resolution
 --- | --- | ---
+`INVALID_MATCH_PARAM` | Invalid value for match parameter | n/a
 
 * It is also possible to get one of [**Global Error Messages**](../../../../README.md#global-error-messages).
 

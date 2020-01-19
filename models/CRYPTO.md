@@ -121,6 +121,7 @@ Param | Type |  Description
 --- | --- | --- 
 asset | null/object | `NULL` for native asset, otherwise [`object` CryptoAsset](#object-cryptoasset))
 address | string | Crypto-currency address
+txs | int / NULL | Number of transactions involving this address
 confirmed | string | Confirmed (spendable) balance
 confirmed_usd | string/NULL | Confirmed balance in USD equivalent
 unconfirmed | string | Unconfirmed balance

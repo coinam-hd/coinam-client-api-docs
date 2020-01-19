@@ -39,8 +39,7 @@ Coinam Client API documentation.
 │       ├── [**/auth/crypto/wallet/@/@/info**](endpoints/auth/crypto/wallet/INFO.md) *(Retrieve information about wallet)*  
 │       ├── *UTXO Wallets Only:*  
 │       ├── [**/auth/crypto/wallet/@/@/utxo/list**](endpoints/auth/crypto/wallet/utxo/LIST.md) *(Retrieve a list of spent and unspent UTXOs)*  
-│       ├── [**/auth/crypto/wallet/@/@/utxo/tx_create**](endpoints/auth/crypto/wallet/utxo/TX-CREATE.md) *(Create a signed/unSigned raw transaction)*  
-│       ├── [**/auth/crypto/wallet/@/@/utxo/tx_broadcast**](endpoints/auth/crypto/wallet/utxo/TX-BROADCAST.md) *(Broadcast a signed transaction)*  
+│       ├── [**/auth/crypto/wallet/@/@/utxo/spend**](endpoints/auth/crypto/wallet/utxo/SPEND.md) *(Create a signed/unSigned raw transaction)*  
 │       ├── *Ethereum Wallets Only:*  
 │       ├── [**/auth/crypto/wallet/@/@/ethereum/assets**](endpoints/auth/crypto/wallet/ethereum/ASSETS.md) *(List or append Ethereum assets)*  
 │       ├── [**/auth/crypto/wallet/@/@/ethereum/spend**](endpoints/auth/crypto/wallet/ethereum/SPEND.md) *(Simple Ethereum transfer)*  
