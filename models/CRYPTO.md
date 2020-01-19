@@ -36,6 +36,7 @@ label | string / NULL | User specific wallet name/label
 allowKeysExport | bool | Indicates if owner can export private keys
 allowKeysImport | bool | Indicates if owner can import private keys
 createdOn | int | Timestamp (UTC) of wallet creation
+balance | NULL / object | [`object` WalletBalance](#object-walletbalance) (with only NATIVE balance) or NULL
 
 ## `object` Address
 
@@ -47,6 +48,7 @@ isArchived | bool | Flag indicates if address has been marked archived
 isImported | bool | Flag indicates if address was imported (rather then derived/generated internally)
 isExported | bool | Flag indicates if private key has been exported to user
 createOn | int | Timestamp in UTC
+balance | NULL / object | [`object` AddressBalance](#object-addressbalance) (with only NATIVE balance) or NULL
 
 ## `object` WalletAPIToken
 
@@ -98,7 +100,8 @@ httpAuthPassword | string / NULL | Used if web hook URL is protected with "HTTP 
 Param | Type |  Description
 --- | --- | --- 
 id | string | Asset unique identifier
-code | string / NULL | Asset's symbol/code
+name | string / NULL / Asset name
+code | string / NULL | Asset symbol/code
 scale | int | Asset's scaling/decimals value
 
 ## `object` WalletBalance
@@ -107,14 +110,20 @@ Param | Type |  Description
 --- | --- | --- 
 wallet | string | 36 byte wallet identifier
 confirmed | string | Confirmed (spendable) balance
+confirmed_usd | string/NULL | Confirmed balance in USD equivalent
 unconfirmed | string | Unconfirmed balance
+unconfirmed_usd | string/NULL | Unconfirmed balance in USD equivalent
+usd_rate | string | USD rate
 
 ## `object` AddressBalance
 
 Param | Type |  Description
 --- | --- | --- 
-asset | null/object | `NULL` for native asset, otherwise 
+asset | null/object | `NULL` for native asset, otherwise [`object` CryptoAsset](#object-cryptoasset))
 address | string | Crypto-currency address
 confirmed | string | Confirmed (spendable) balance
+confirmed_usd | string/NULL | Confirmed balance in USD equivalent
 unconfirmed | string | Unconfirmed balance
+unconfirmed_usd | string/NULL | Unconfirmed balance in USD equivalent
+usd_rate | string | USD rate
 
