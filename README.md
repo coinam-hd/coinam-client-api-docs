@@ -38,7 +38,7 @@ Coinam Client API documentation.
 │       ├── [**/auth/crypto/wallet/@/@/dev/tokens**](endpoints/auth/crypto/wallet/dev/TOKENS.md) *(Wallet API tokens)*  
 │       ├── [**/auth/crypto/wallet/@/@/info**](endpoints/auth/crypto/wallet/INFO.md) *(Retrieve information about wallet)*  
 │       ├── *UTXO Wallets Only:*  
-│       ├── [**/auth/crypto/wallet/@/@/utxo/list**](endpoints/auth/crypto/wallet/utxo/LIST.md) *(Retrieve a list of spent and unspent UTXOs)*  
+│       ├── [**/auth/crypto/wallet/@/@/utxo/list**](endpoints/auth/crypto/wallet/utxo/UTXO.md) *(Retrieve a list of spent and unspent UTXOs)*  
 │       ├── [**/auth/crypto/wallet/@/@/utxo/spend**](endpoints/auth/crypto/wallet/utxo/SPEND.md) *(Create a signed/unSigned raw transaction)*  
 │       ├── *Ethereum Wallets Only:*  
 │       ├── [**/auth/crypto/wallet/@/@/ethereum/assets**](endpoints/auth/crypto/wallet/ethereum/ASSETS.md) *(List or append Ethereum assets)*  
@@ -104,6 +104,7 @@ Code | Meaning | Possible Resolution
 `WALLET_COIN_MISMATCH` | Wallet coin does not match with crypto-currency code sent via URL | n/a
 `WALLET_STATUS` | Wallet is inaccessible because of its status | Contact support
 `WALLET_STATUS_NEW` | Wallet is new, must be activated | Redirection to wallet/activation endpoint
+`WALLET_INCOMPATIBLE_OP` | Operation is not wallet for this wallet type | n/a
 
 ### Authentication Errors
 

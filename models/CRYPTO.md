@@ -92,6 +92,20 @@ verifySSL | bool | If set to FALSE then SSL validation will be ignored when send
 httpAuthUsername | string / NULL | Used if web hook URL is protected with "HTTP Basic authorization"
 httpAuthPassword | string / NULL | Used if web hook URL is protected with "HTTP Basic authorization"
 
+# `object` UTXO
+
+Param | Type |  Description
+--- | --- | --- 
+status | string | Possible values "new", "confirmed", "orphaned"
+coin | string | Crypto-currency code
+address | string | Crypto-currency address
+tx | string | Transaction hash/ID
+index | int | Index / vin
+value | string | Value of transaction
+timeStamp | int | Timestamp of UTXO transaction
+spentTxId | string | Transaction hash/ID where this UTXO is spent
+spendTxTime | int | Timestamp of spent transaction
+
 ---
 
 ## Pending
