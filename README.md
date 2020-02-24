@@ -80,6 +80,8 @@ Code | Meaning | Possible Resolution
 `DB_CONNECTION_ERROR` | App fails to connect with appropriate API logs database | n/a
 `DB_QUERY_ERROR` | DB query critical to execution was failed | n/a
 `BAD_REMOTE_ADDR` | App fails to determine remote IP address | n/a
+`CONCURRENT_REQUEST_BLOCKED` | Concurrent request has been blocked | n/a
+`CONCURRENT_REQUEST_TIMEOUT` | Concurrent request has been blocked | n/a
 `SESSION_ID_HEADER` | API session id not sent as HTTP request header | Send API session ID
 `SESSION_ID_HEADER_INVALID` | API session id sent as header is invalid (does not match hash64) | Send a valid API session ID
 `SESSION_NOT_FOUND` | No such API session found with given token (and/or in rare cases IP address) | n/a
@@ -104,6 +106,7 @@ Code | Meaning | Possible Resolution
 `WALLET_COIN_MISMATCH` | Wallet coin does not match with crypto-currency code sent via URL | n/a
 `WALLET_STATUS` | Wallet is inaccessible because of its status | Contact support
 `WALLET_STATUS_NEW` | Wallet is new, must be activated | Redirection to wallet/activation endpoint
+`WALLET_STATUS_FROZEN` | Wallet status is frozen | Contact support
 `WALLET_INCOMPATIBLE_OP` | Operation is not wallet for this wallet type | n/a
 
 ### Authentication Errors

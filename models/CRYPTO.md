@@ -106,6 +106,19 @@ timeStamp | int | Timestamp of UTXO transaction
 spentTxId | string | Transaction hash/ID where this UTXO is spent
 spendTxTime | int | Timestamp of spent transaction
 
+# `object` UTXOFee
+
+Param | Type |  Description
+--- | --- | --- 
+coin | string | Crypto-currency code
+low | int | Low priority fee per unit (byte/weight)
+normal | int | Normal priority fee per unit (byte/weight)
+high | int | High priority fee per unit (byte/weight)
+minimum | string / NULL | Minimum network fee
+maximum | string | Maximum network fee
+timeStamp | int | Timestamp when this object was last updated
+cachedOn | int / NULL | If cached, a time stamp indicating when this object was cached; This prop will not exist on non-cached response objects
+
 ---
 
 ## Pending
