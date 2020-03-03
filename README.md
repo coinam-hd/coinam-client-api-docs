@@ -119,6 +119,7 @@ Code | Meaning | Possible Resolution
 `AUTH_USER_TIMEOUT` | Authenticated session has timed out | User needs to login again
 `AUTH_USER_DISABLED` | User account has been DISABLED | n/a
 `AUTH_USER_2FA_NOT_SETUP` | 2FA has not been setup for this account | Always force users to [**Finish TOTP setup**](endpoints/auth/TOTP.md) right after Registration
+`AUTH_SESSION_TOTP` | User is logged in but initial TOTP is not verified | Users must enter TOTP once after logging in
 
 ### 2FA Error Messages
 
