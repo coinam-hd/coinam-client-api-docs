@@ -7,8 +7,6 @@
 ### Recommended Flow:
 
 * Show login form with e-mail address and password fields.
-* Make sure TOTP field is hidden.
-* Upon login submission, if error code `2FA_TOTP_REQ` or (wildcard `2FA_*`) is present, then show the 2FA code screen.
 
 ## `POST` [/login]()
 
@@ -19,7 +17,6 @@ Param | Type | Required | Description
 xsrf | hash32 | yes | XSRF token
 email | string | yes | Registered e-mail address
 password | string | yes | Password
-totpCode | string | no | TOTP is required if user has google authenticate seed set, otherwise this param is ignored
 reCaptchaRes | string | no | If `GET /session` indicates that reCaptcha is required (`reCaptcha.required` is `TRUE`) then send reCaptcha response in this param
 
 ### Success Response
@@ -29,6 +26,7 @@ Param | Type |  Description
 userId | integer | Authenticated user ID
 
 * Session token will now be authenticated with this user;
+* Users will have to verify TOTP code once
 
 ### Errors
 
