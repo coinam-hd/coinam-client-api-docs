@@ -26,7 +26,7 @@ Param | Type |  Description
 userId | integer | Authenticated user ID
 
 * Session token will now be authenticated with this user;
-* Users will have to verify TOTP code once
+* Users will have to verify TOTP code in next screen
 
 ### Errors
 
