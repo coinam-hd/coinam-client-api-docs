@@ -14,6 +14,7 @@ Param | Type |  Description
 type | string | Possibly one of "web", "desktop" or "mobile"
 xsrf | hash32 | 16 byte XSRF/CSRF token
 authUser | NULL/object | If a registered user is authenticated a user object is returned otherwise NULL
+authSessionOtp | bool | If user is authenticated and has passed first TOTP verification, it will be TRUE otherwise FALSE
 reCaptcha | object | ReCaptcha object (see below)
 issuedOn | integer | Timestamp when this session was initiated
 lastUsedOn | integer | Timestamp when this session was last used
