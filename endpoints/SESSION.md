@@ -19,6 +19,19 @@ reCaptcha | object | ReCaptcha object (see below)
 issuedOn | integer | Timestamp when this session was initiated
 lastUsedOn | integer | Timestamp when this session was last used
 
+#### `object` authUser
+
+Param | Type |  Description
+--- | --- | --- 
+id | int | User's unique identifier
+status | string | either one of "active", "frozen" or "disabled"
+firstName | string | User's first name
+lastName | string | User's last name
+email | string | User's unique registered e-mail address
+isEmailVerified | bool | Is user's e-mail address verified?
+hasGoogle2FA | bool | User has configured google 2fa?
+joinedStamp | int | Unix timestamp of registration (UTC)
+
 #### `object` reCaptcha
 
 Param | Type |  Description
@@ -39,7 +52,7 @@ It is also possible to get one of [**Global Error Messages**](../README.md#globa
 
 Param | Type | Required | Description
 --- | --- | --- | ---
-type | string | no | Determined from user-agent for time being; This will change later!
+type | string | yes | Determined from user-agent for time being; This will change later!
 
 ### Success Response
 
